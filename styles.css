@@ -284,6 +284,7 @@ html[lang="ar"] .pill { letter-spacing: 0; font-size: 12px; }
 .ask-btns button.chosen { background: var(--grad); color: #04111a; border-color: transparent; }
 .ask-btns button.suggested { border-color: var(--emerald); box-shadow: 0 0 0 3px rgba(52, 211, 153, .18); }
 .ask-done { display: flex; gap: 10px; align-items: flex-start; margin: 14px 0 0; color: var(--emerald); font-size: 14px; animation: feedIn .5s var(--ease); }
+.ask-done[hidden] { display: none; }
 .ask-done svg { width: 20px; height: 20px; flex: none; }
 
 /* tech chips */

@@ -226,7 +226,7 @@
           sx = 4 + clamp(push * 0.15, 0, 6);
           sy = 34 + (by - 34) * 0.25;
         } else {
-          sx = sx + push;
+          sx = 4 + (sx - 4) * (attacking ? 0.95 : 0.74) + push;
           sy = 34 + (sy - 34) * (attacking ? 1.05 : 0.72) + (by - 34) * (attacking ? 0.18 : 0.35);
         }
         p.ph += dt;
@@ -457,9 +457,12 @@
   }
 
   // warm the simulation so the first frame already looks like a match
+  setLang(pickLang());
   for (let i = 0; i < 240; i++) step(1 / 30);
   possTime = [56, 44];
   metrics();
+  draw(performance.now());
+  drawClip(1900);
 
   let last = performance.now(), acc = 0, heroVisible = true, askVisible = false;
   new IntersectionObserver(([e]) => { heroVisible = e.isIntersecting; }, { threshold: 0 }).observe(cv);
@@ -478,7 +481,5 @@
     requestAnimationFrame(frame);
   }
 
-  setLang(pickLang());
-  if (reduced) { draw(0); drawClip(1900); }
-  else requestAnimationFrame(frame);
+  if (!reduced) requestAnimationFrame(frame);
 })();
