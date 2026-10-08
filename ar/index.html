@@ -1,0 +1,441 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Marmastats | تحليل مباريات كرة القدم بالفيديو والبيانات</title>
+<meta name="description" content="يحوّل كورة فيديو مباراتك إلى تقرير تكتيكي، وتحوّل المنصّة بيانات InStat وسترات GPS من Catapult إلى موقع خاص بناديك. بالعربية والإنجليزية والفرنسية.">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<link rel="canonical" href="https://marmastats.com/ar/">
+<link rel="alternate" hreflang="en" href="https://marmastats.com/">
+<link rel="alternate" hreflang="fr" href="https://marmastats.com/fr/">
+<link rel="alternate" hreflang="ar" href="https://marmastats.com/ar/">
+<link rel="alternate" hreflang="x-default" href="https://marmastats.com/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Marmastats">
+<meta property="og:url" content="https://marmastats.com/ar/">
+<meta property="og:title" content="Marmastats | تحليل مباريات كرة القدم بالفيديو والبيانات">
+<meta property="og:description" content="يحوّل كورة فيديو مباراتك إلى تقرير تكتيكي، وتحوّل المنصّة بيانات InStat وسترات GPS من Catapult إلى موقع خاص بناديك. بالعربية والإنجليزية والفرنسية.">
+<meta property="og:image" content="https://marmastats.com/assets/og/og-ar.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Marmastats: تحليل مباريات كرة القدم بالفيديو والبيانات، بالعربية والإنجليزية والفرنسية">
+<meta property="og:locale" content="ar_AR">
+<meta property="og:locale:alternate" content="en_US">
+<meta property="og:locale:alternate" content="fr_FR">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Marmastats | تحليل مباريات كرة القدم بالفيديو والبيانات">
+<meta name="twitter:description" content="يحوّل كورة فيديو مباراتك إلى تقرير تكتيكي، وتحوّل المنصّة بيانات InStat وسترات GPS من Catapult إلى موقع خاص بناديك. بالعربية والإنجليزية والفرنسية.">
+<meta name="twitter:image" content="https://marmastats.com/assets/og/og-ar.png">
+<meta name="twitter:image:alt" content="Marmastats: تحليل مباريات كرة القدم بالفيديو والبيانات، بالعربية والإنجليزية والفرنسية">
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "Organization",
+   "@id": "https://marmastats.com/#org",
+   "name": "Marmastats",
+   "url": "https://marmastats.com/",
+   "logo": {
+    "@type": "ImageObject",
+    "url": "https://marmastats.com/assets/brand/icone-512.png",
+    "width": 512,
+    "height": 512
+   },
+   "email": "haris.garrigos@marmastats.com",
+   "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Lyon",
+    "addressCountry": "FR"
+   },
+   "founder": {
+    "@type": "Person",
+    "name": "Haris Garrigos",
+    "sameAs": [
+     "https://www.linkedin.com/in/haris-garrigos-926b05151/"
+    ]
+   }
+  },
+  {
+   "@type": "WebSite",
+   "@id": "https://marmastats.com/#site",
+   "url": "https://marmastats.com/",
+   "name": "Marmastats",
+   "publisher": {
+    "@id": "https://marmastats.com/#org"
+   },
+   "inLanguage": [
+    "en",
+    "fr",
+    "ar"
+   ]
+  },
+  {
+   "@type": "WebPage",
+   "@id": "https://marmastats.com/ar/#page",
+   "url": "https://marmastats.com/ar/",
+   "name": "Marmastats | تحليل مباريات كرة القدم بالفيديو والبيانات",
+   "description": "يحوّل كورة فيديو مباراتك إلى تقرير تكتيكي، وتحوّل المنصّة بيانات InStat وسترات GPS من Catapult إلى موقع خاص بناديك. بالعربية والإنجليزية والفرنسية.",
+   "inLanguage": "ar",
+   "isPartOf": {
+    "@id": "https://marmastats.com/#site"
+   },
+   "about": {
+    "@id": "https://marmastats.com/#org"
+   },
+   "primaryImageOfPage": "https://marmastats.com/assets/og/og-ar.png"
+  },
+  {
+   "@type": "SoftwareApplication",
+   "name": "Kora",
+   "applicationCategory": "SportsApplication",
+   "operatingSystem": "Web",
+   "description": "للأندية التي تصوّر مبارياتها لكن ليس لديها محلّل ولا مزوّد بيانات. يشاهد كورة التسجيل، ويتتبّع كل لاعب، ويسألك عندما يشكّ.",
+   "inLanguage": [
+    "en",
+    "fr",
+    "ar"
+   ],
+   "publisher": {
+    "@id": "https://marmastats.com/#org"
+   }
+  },
+  {
+   "@type": "SoftwareApplication",
+   "name": "منصّة Marmastats",
+   "applicationCategory": "SportsApplication",
+   "operatingSystem": "Web",
+   "description": "للأندية التي تتلقّى ملفات المباريات من مزوّد بيانات. نحوّلها إلى موقع خاص بالنادي: الخلاصة أولًا، والرسم الذي يثبتها تحتها مباشرة.",
+   "inLanguage": [
+    "en",
+    "fr",
+    "ar"
+   ],
+   "publisher": {
+    "@id": "https://marmastats.com/#org"
+   }
+  },
+  {
+   "@type": "FAQPage",
+   "@id": "https://marmastats.com/ar/#faq",
+   "inLanguage": "ar",
+   "mainEntity": [
+    {
+     "@type": "Question",
+     "name": "هل نحتاج إلى محلّل أو مزوّد بيانات لاستخدام كورة؟",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "لا. يحتاج كورة فقط إلى تسجيل المباراة كاملة، من كاميرا المحلّل أو من البث التلفزيوني (تجريبي). وعندما يشكّ، يعرض عليك مقطعًا من 3 ثوانٍ ويطرح سؤالًا بسيطًا."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "ما مزوّدو البيانات الذين تقرأ المنصّة ملفاتهم؟",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "حاليًا: ملفات المباريات وجداول الدوري من InStat، وسترات GPS من Catapult (OpenField). مزوّد آخر مثل Opta أو Wyscout أو StatsBomb؟ أرسل إلينا أحد ملفاتك، ونكيّف القراءة مع ملفاتك قبل نشر مباراتك الأولى."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "هل كل شيء متاح فعلًا بالعربية؟",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "نعم. كل شاشة وكل جملة وكل تقرير PDF متاح بالعربية والإنجليزية والفرنسية، مع تخطيط حقيقي من اليمين إلى اليسار بالعربية."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "من يمكنه رؤية بيانات نادينا؟",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "جهازك الفني فقط. في المنصّة، لكل نادٍ موقعه الخاص، ولا يفتحه إلا الأشخاص الذين تحدّدهم. لا يُنشر شيء على الإنترنت العام."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "هل يمكننا التجربة قبل أن نقرّر؟",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "نعم. يعرض العرض التجريبي المنصّة على دوري متخيَّل، ويمكنك أن تضع فيه أحد ملفات مبارياتك من InStat: يُحلَّل في متصفحك ولا يُرسَل إلى أي مكان. ولتجربة كورة، راسلنا لعرض على إحدى مبارياتك."
+     }
+    }
+   ]
+  }
+ ]
+}
+</script>
+<meta name="theme-color" content="#0B1513">
+<link rel="icon" href="/assets/favicon.svg?v=6" type="image/svg+xml">
+<link rel="icon" href="/favicon.ico" sizes="48x48">
+<link rel="apple-touch-icon" href="/assets/brand/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@100..112,400..800&family=IBM+Plex+Mono:wght@500;600&family=Alexandria:wght@600..800&family=IBM+Plex+Sans+Arabic:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/styles.css?v=6">
+</head>
+<body>
+
+<header class="nav" id="nav">
+  <a class="brand" href="/ar/"><img src="/assets/brand/logo-craie.svg?v=6" alt="Marmastats" width="204" height="30"></a>
+  <nav class="nav-links" aria-label="Main">
+    <a href="#video" class="nl-video" data-i18n="nav.video">تحليل الفيديو</a>
+    <a href="#data" class="nl-data" data-i18n="nav.data">بيانات المزوّد</a>
+    <a href="#faq" data-i18n="nav.faq">أسئلة</a>
+    <a href="#contact" data-i18n="nav.contact">تواصل معنا</a>
+  </nav>
+  <div class="nav-end">
+    <nav class="lang" data-i18n-aria="lang.label" aria-label="اللغة">
+      <a href="/" hreflang="en" lang="en">EN</a>
+      <a href="/fr/" hreflang="fr" lang="fr">FR</a>
+      <a href="/ar/" hreflang="ar" aria-current="page" lang="ar">ع</a>
+    </nav>
+    <a class="btn btn-ballon btn-small" href="mailto:haris.garrigos@marmastats.com?subject=Marmastats%20demo" data-i18n="nav.cta">اطلب عرضًا</a>
+  </div>
+</header>
+
+<main id="top">
+  <!-- HERO : under the floodlights -->
+  <section class="hero dark">
+    <div class="hero-fx" aria-hidden="true">
+      <span class="beam beam-l"></span><span class="beam beam-r"></span>
+      <svg class="hero-pitch" viewBox="-20 -20 1090 720"><g fill="none" stroke="currentColor" stroke-width="2.4">
+        <rect x="0" y="0" width="1050" height="680"/><path d="M525 0v680"/><circle cx="525" cy="340" r="91.5"/><circle cx="525" cy="340" r="4" fill="currentColor"/>
+        <rect x="0" y="138.5" width="165" height="403"/><rect x="0" y="248.5" width="55" height="183"/><path d="M165 267a91.5 91.5 0 0 1 0 146"/><circle cx="110" cy="340" r="4" fill="currentColor"/>
+        <rect x="885" y="138.5" width="165" height="403"/><rect x="995" y="248.5" width="55" height="183"/><path d="M885 267a91.5 91.5 0 0 0 0 146"/><circle cx="940" cy="340" r="4" fill="currentColor"/>
+      </g></svg>
+      <span class="grain"></span>
+    </div>
+
+    <div class="hero-in">
+      <p class="eyebrow reveal" data-i18n="hero.eyebrow">تحليل المباريات لأندية كرة القدم</p>
+      <h1 class="reveal" data-i18n-html="hero.title">مبارياتك مصوَّرة.<br>وبياناتك مدفوعة الثمن.<br><em>فمن يقرؤها فعلًا؟</em></h1>
+      <p class="lead reveal" data-i18n-html="hero.sub">يحوّلها Marmastats إلى <b>تقارير يفهمها جهازك الفني بأكمله من نظرة واحدة</b>، بالعربية والإنجليزية والفرنسية. ابدأ ممّا لديك:</p>
+
+      <div class="doors">
+        <a class="door door-video reveal" href="#video">
+          <span class="door-media brk">
+            <svg class="door-pic" viewBox="0 0 360 104" aria-hidden="true">
+              <defs><symbol id="dpb" viewBox="-10 -10 20 20"><path d="M-9-4.5V-9h4.5M4.5-9H9v4.5M9 4.5V9H4.5M-4.5 9H-9V4.5"/></symbol></defs>
+              <rect width="360" height="104" class="dp-grass"/>
+              <g class="dp-stripes"><rect x="0" width="60" height="104"/><rect x="120" width="60" height="104"/><rect x="240" width="60" height="104"/></g>
+              <g class="dp-lines" fill="none"><path d="M0 8h360M110 8v96M360 22h-64v82M360 44h-24v36h24M296 47a20 20 0 0 0 0 28"/><circle cx="110" cy="62" r="24"/></g>
+              <path class="dp-pass" d="M176 72 228 60"/>
+              <g class="dp-us"><circle cx="150" cy="40" r="4.2"/><circle cx="176" cy="72" r="4.2"/><circle cx="205" cy="28" r="4.2"/><circle cx="232" cy="59" r="4.2"/><circle cx="262" cy="86" r="4.2"/></g>
+              <g class="dp-them"><circle cx="252" cy="36" r="4.2"/><circle cx="274" cy="64" r="4.2"/><circle cx="308" cy="48" r="4.2"/><circle cx="318" cy="76" r="4.2"/><circle cx="292" cy="92" r="4.2"/></g>
+              <g class="dp-track"><use href="#dpb" x="140" y="30" width="20" height="20"/><use href="#dpb" x="166" y="62" width="20" height="20"/><use href="#dpb" x="195" y="18" width="20" height="20"/><use href="#dpb" x="252" y="76" width="20" height="20"/><use href="#dpb" x="242" y="26" width="20" height="20"/><use href="#dpb" x="264" y="54" width="20" height="20"/><use href="#dpb" x="298" y="38" width="20" height="20"/><use href="#dpb" x="308" y="66" width="20" height="20"/><use href="#dpb" x="282" y="82" width="20" height="20"/></g>
+              <use href="#dpb" class="dp-focus" x="219" y="46" width="26" height="26"/>
+              <circle class="dp-ball" cx="239" cy="63" r="2.6"/>
+              <g class="dp-tag"><rect x="215" y="30" width="34" height="13" rx="3"/><text x="232" y="39.5">#9</text></g>
+              <g class="dp-rec"><rect x="8" y="14" width="40" height="14" rx="3"/><circle cx="16" cy="21" r="3"/><text x="23" y="24.5">REC</text></g>
+              <g class="dp-time"><rect x="8" y="80" width="40" height="14" rx="3"/><text x="28" y="90.5">71:32</text></g>
+            </svg>
+          </span>
+          <span class="door-body">
+            <span class="door-tag"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="6" width="13" height="12" rx="2.5"/><path d="m16 10.5 5-3v9l-5-3"/></svg><span data-i18n="door.v.tag">تحليل الفيديو · كورة</span></span>
+            <h2 data-i18n="door.v.title">لديك فيديو المباراة</h2>
+            <dl class="door-facts">
+              <div><dt data-i18n="door.in">ترسل</dt><dd data-i18n="door.v.in">المباراة كاملة: كاميرا المحلّل أو البث التلفزيوني</dd></div>
+              <div><dt data-i18n="door.out">تحصل على</dt><dd data-i18n="door.v.out">شكل الفريق، الكتلة، خط الدفاع، اللحظات الحاسمة</dd></div>
+            </dl>
+            <span class="door-foot"><span class="status beta" data-i18n="door.v.status">تجريبي</span><span class="door-go" data-i18n="door.v.go">اكتشف كورة</span></span>
+          </span>
+        </a>
+        <a class="door door-data reveal" href="#data">
+          <span class="door-media brk door-shot"><img src="/assets/shots/match-ar.jpg" alt="" width="1440" height="1000" decoding="async" fetchpriority="high"></span>
+          <span class="door-body">
+            <span class="door-tag"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 19V9m6 10V5m6 14v-7m5 7H3"/></svg><span data-i18n="door.d.tag">بيانات المزوّد · المنصّة</span></span>
+            <h2 data-i18n="door.d.title">تتلقّى بيانات من مزوّد</h2>
+            <dl class="door-facts">
+              <div><dt data-i18n="door.in">ترسل</dt><dd data-i18n="door.d.in">ملفات المباريات (InStat) وسترات GPS (Catapult)</dd></div>
+              <div><dt data-i18n="door.out">تحصل على</dt><dd data-i18n="door.d.out">صفحات المباريات، ملفات اللاعبين، ترتيب الدوري، تقرير PDF</dd></div>
+            </dl>
+            <span class="door-foot"><span class="status live" data-i18n="door.d.status">قيد الاستخدام في نادٍ محترف</span><span class="door-go" data-i18n="door.d.go">شاهد العرض</span></span>
+          </span>
+        </a>
+      </div>
+      <p class="trust reveal"><svg viewBox="0 0 20 20" aria-hidden="true"><path d="m5 10 3.5 3.5L15 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span data-i18n-html="pilot.line">قيد التجربة مع نادٍ محترف في <b>الدوري الكويتي الممتاز</b>.</span></p>
+    </div>
+  </section>
+
+  <!-- ============ 01 VIDEO : KORA ============ -->
+  <section class="part part-video" id="video">
+    <div class="part-head reveal">
+      <p class="part-label"><span class="part-num">01</span><span class="part-rule"></span><span data-i18n="v.label">تحليل الفيديو</span></p>
+      <h2 data-i18n="v.title">كورة: من فيديو المباراة إلى التقرير التكتيكي.</h2>
+      <p class="sub" data-i18n="v.sub">للأندية التي تصوّر مبارياتها لكن ليس لديها محلّل ولا مزوّد بيانات. يشاهد كورة التسجيل، ويتتبّع كل لاعب، ويسألك عندما يشكّ.</p>
+    </div>
+
+    <div class="v-grid">
+      <div class="pitch-frame reveal">
+        <div class="pitch-head">
+          <span class="live"><i></i><span data-i18n="viz.live">تتبّع مباشر</span></span>
+          <span class="clock" id="clock">00:00</span>
+        </div>
+        <div class="pitch-box brk"><canvas id="pitch" data-i18n-aria="alt.pitch" aria-label="رسم متحرك: لاعبون يجري تتبّعهم على ملعب كرة قدم، مع الكتلة وخط الدفاع" role="img"></canvas></div>
+        <div class="metrics">
+          <div class="metric"><span class="m-label" data-i18n="viz.block">الكتلة</span><b id="m-block">—</b></div>
+          <div class="metric m-line"><span class="m-label" data-i18n="viz.line">خط الدفاع</span><b id="m-line">—</b></div>
+          <div class="metric"><span class="m-label" data-i18n="viz.poss">الاستحواذ</span><b id="m-poss">—</b></div>
+        </div>
+        <ol class="feed" id="feed" aria-live="off"></ol>
+        <p class="frame-note" data-i18n="viz.note">رسم توضيحي. يُبنى التقرير الحقيقي من فيديو مباراتك.</p>
+      </div>
+
+      <ul class="points">
+        <li class="reveal"><h3 data-i18n="val.c1t">ارفع الملف. هذا كل شيء.</h3><p data-i18n="val.c1p">ارفع ملف المباراة وحدّد ضربتَي البداية. ويتكفّل كورة بالباقي.</p></li>
+        <li class="reveal"><h3 data-i18n="val.c2t">يسأل عندما يشكّ.</h3><p data-i18n="val.c2p">بدل التخمين، يعرض كورة مقطعًا من 3 ثوانٍ ويطرح سؤالًا بسيطًا. وإجابتك نقرة واحدة.</p></li>
+        <li class="reveal"><h3 data-i18n="val.c3t">يتعلّم ناديك.</h3><p data-i18n="val.c3p">تُحفظ كل إجابة في ملف النادي: ألوان القمصان، الملعب، الكاميرا. وفي المباراة التالية يعرفها كورة مسبقًا.</p></li>
+        <li class="reveal"><h3 data-i18n="val.c4t">يتحدّث لغة جهازك الفني.</h3><p data-i18n="val.c4p">كل شاشة وكل تقرير بالإنجليزية والفرنسية والعربية، مع تخطيط حقيقي من اليمين إلى اليسار.</p></li>
+      </ul>
+    </div>
+
+    <div class="how">
+      <div>
+        <h3 class="how-title reveal" data-i18n="how.title">أربع خطوات. واحدة منها فقط عليك.</h3>
+        <ol class="steps" id="steps">
+          <li class="step reveal"><span class="step-n">1</span><div><h4 data-i18n="how.s1t">الرفع</h4><p data-i18n="how.s1p">المباراة كاملة من كاميرا المحلّل أو من البث التلفزيوني. وإذا انقطع الاتصال، يُستأنف الرفع من حيث توقّف.</p></div></li>
+          <li class="step reveal"><span class="step-n">2</span><div><h4 data-i18n="how.s2t">الرصد والتتبّع</h4><p data-i18n="how.s2p">رصد اللاعبين والحكّام والكرة لقطةً بلقطة، وفصل الفريقين حسب لون القميص، ومعايرة الملعب بالأمتار الحقيقية.</p></div></li>
+          <li class="step reveal you"><span class="step-n">3</span><div><h4><span data-i18n="how.s3t">التأكيد</span> <span class="pill" data-i18n="how.you">دورك</span></h4><p data-i18n="how.s3p">عندما يشكّ النموذج، يسأل. مقطع قصير وسؤال واحد: بضع دقائق من الإجابات في المباراة على الأكثر.</p></div></li>
+          <li class="step reveal"><span class="step-n">4</span><div><h4 data-i18n="how.s4t">التقرير</h4><p data-i18n="how.s4p">شكل الفريق، حجم الكتلة، ارتفاع خط الدفاع، اللحظات الحاسمة، مكتوب للمدرّبين لا لعلماء البيانات.</p></div></li>
+        </ol>
+      </div>
+
+      <div class="ask reveal" id="ask">
+        <div class="ask-top">
+          <span class="ask-avatar">K</span>
+          <div><b data-i18n="ask.who">لدى كورة سؤال</b><small data-i18n="ask.meta">المباراة 3 · الشوط الثاني · المقطع 1 من 4</small></div>
+        </div>
+        <div class="clip"><canvas id="clip" aria-hidden="true"></canvas><span class="clip-time">71:32 · 3 s</span><span class="clip-play" aria-hidden="true"></span></div>
+        <p class="ask-q" data-i18n="ask.q">هل هذا هدف لفريقك؟</p>
+        <div class="ask-btns">
+          <button data-answer="ours" data-i18n="ask.a1">نعم، لنا</button>
+          <button data-answer="theirs" data-i18n="ask.a2">لهم</button>
+          <button data-answer="none" data-i18n="ask.a3">ليس هدفًا</button>
+        </div>
+        <p class="ask-done" id="ask-done" hidden><svg viewBox="0 0 20 20" aria-hidden="true"><path d="m5 10 3.5 3.5L15 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span data-i18n="ask.done">حُفظ في ملف النادي. في المرة القادمة سيقترحه كورة.</span></p>
+      </div>
+    </div>
+
+    <div class="part-cta reveal">
+      <a class="btn btn-video" href="mailto:haris.garrigos@marmastats.com?subject=Kora%20demo"><span data-i18n="v.cta">اطلب عرضًا لكورة</span><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M4 10h11m-4-5 5 5-5 5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+    </div>
+  </section>
+
+  <!-- ============ 02 DATA : PLATFORM ============ -->
+  <section class="part part-data dark" id="data">
+    <span class="grain" aria-hidden="true"></span>
+    <div class="part-head reveal">
+      <p class="part-label"><span class="part-num">02</span><span class="part-rule"></span><span data-i18n="d.label">بيانات المزوّد</span></p>
+      <h2 data-i18n="d.title">المنصّة: بيانات مزوّدك، يقرؤها الجهاز الفني بأكمله.</h2>
+      <p class="sub" data-i18n="d.sub">للأندية التي تتلقّى ملفات المباريات من مزوّد بيانات. نحوّلها إلى موقع خاص بالنادي: الخلاصة أولًا، والرسم الذي يثبتها تحتها مباشرة.</p>
+    </div>
+
+    <div class="browser-wrap brk reveal">
+      <div class="browser">
+        <div class="browser-bar">
+          <span class="dots"><i></i><i></i><i></i></span>
+          <div class="tabs" role="tablist">
+            <button role="tab" aria-selected="true" data-shot="match" data-i18n="plat.tab1">المباراة</button>
+            <button role="tab" aria-selected="false" data-shot="ligue" data-i18n="plat.tab2">الدوري</button>
+            <button role="tab" aria-selected="false" data-shot="joueur" data-i18n="plat.tab3">اللاعب</button>
+          </div>
+        </div>
+        <div class="shots" id="shots">
+          <img data-shot="match" class="on" src="/assets/shots/match-ar.jpg" data-i18n-alt="تقرير مباراة في المنصّة: النتيجة والأرقام الرئيسية وشبكة التمريرات (بيانات تجريبية)" alt="تقرير مباراة في المنصّة: النتيجة والأرقام الرئيسية وشبكة التمريرات (بيانات تجريبية)" width="1440" height="1000" loading="lazy">
+          <img data-shot="ligue" src="/assets/shots/ligue-ar.jpg" data-i18n-alt="ترتيب الدوري وكل أنديته (بيانات تجريبية)" alt="ترتيب الدوري وكل أنديته (بيانات تجريبية)" width="1440" height="1000" loading="lazy">
+          <img data-shot="joueur" src="/assets/shots/joueur-ar.jpg" data-i18n-alt="ملف لاعب مع مخطط راداري، مقارنةً بالفريق والدوري (بيانات تجريبية)" alt="ملف لاعب مع مخطط راداري، مقارنةً بالفريق والدوري (بيانات تجريبية)" width="1440" height="1000" loading="lazy">
+        </div>
+      </div>
+    </div>
+    <p class="shot-cap reveal"><span id="shot-cap" data-i18n="plat.cap.match">المباراة في لمحة، ثم بنية التمرير والهجوم وبناء اللعب وحارس المرمى.</span> <span class="muted" data-i18n="plat.demo">بيانات تجريبية: دوري متخيَّل.</span></p>
+
+    <div class="part-cta reveal">
+      <a class="btn btn-data" href="/demo/app.html?lang=ar"><span data-i18n="d.cta1">افتح العرض</span><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M4 10h11m-4-5 5 5-5 5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+      <a class="btn btn-ghost" href="/demo/?lang=ar#essayer" data-i18n="d.cta2">جرّبها بملف مباراتك</a>
+    </div>
+
+    <div class="sources">
+      <h3 class="reveal" data-i18n="src.title">البيانات التي نقرؤها</h3>
+      <div class="src-grid">
+        <article class="src reveal">
+          <span class="status live" data-i18n="src.ok">مدعوم</span>
+          <h4 translate="no">InStat</h4>
+          <p data-i18n="src.instat">ملفات المباريات (الفريق، اللاعبون، الحارس) وجداول الدوري، تُراجَع قبل أي نشر.</p>
+        </article>
+        <article class="src reveal">
+          <span class="status live" data-i18n="src.ok">مدعوم</span>
+          <h4 translate="no">Catapult <small>OpenField</small></h4>
+          <p data-i18n="src.catapult">سترات GPS بتردّد 10 هرتز: المسافة، السرعة القصوى، الانطلاقات السريعة، التسارعات، لكل لاعب وكل 5 دقائق.</p>
+        </article>
+        <article class="src src-next reveal">
+          <span class="status next" data-i18n="src.next">عند الطلب</span>
+          <h4 translate="no">Opta&nbsp;· Wyscout&nbsp;· StatsBomb</h4>
+          <p data-i18n="src.other">مزوّد آخر؟ أرسل إلينا أحد ملفاتك: نكيّف القراءة مع ملفاتك قبل نشر مباراتك الأولى.</p>
+        </article>
+      </div>
+      <p class="src-note reveal" data-i18n="src.note">هذه الأسماء علامات تجارية لأصحابها. Marmastats مستقل وغير تابع لأيّ من هؤلاء المزوّدين.</p>
+    </div>
+  </section>
+
+  <!-- ============ WHICH ONE + FAQ ============ -->
+  <section class="section compare-sec">
+    <h2 class="reveal" data-i18n="cmp.title">أيّهما يناسبك؟</h2>
+    <div class="compare reveal" role="table">
+      <div class="cmp-row cmp-head" role="row">
+        <span role="columnheader"></span>
+        <span role="columnheader" class="c-video" data-i18n="cmp.video">تحليل الفيديو · كورة</span>
+        <span role="columnheader" class="c-data" data-i18n="cmp.data">بيانات المزوّد · المنصّة</span>
+      </div>
+      <div class="cmp-row" role="row"><span role="rowheader" data-i18n="cmp.r1">ما تحتاجه</span><span role="cell" data-i18n="cmp.r1v">تسجيل للمباراة</span><span role="cell" data-i18n="cmp.r1d">مزوّد بيانات (InStat)، وسترات GPS إن وُجدت</span></div>
+      <div class="cmp-row" role="row"><span role="rowheader" data-i18n="cmp.r2">ما يُظهره</span><span role="cell" data-i18n="cmp.r2v">كيف ينتظم فريقك: الشكل، الكتلة، خط الدفاع، اللحظات الحاسمة</span><span role="cell" data-i18n="cmp.r2d">كل حركة محسوبة: التمريرات، التسديدات، الصراعات، لكل لاعب ولكل أندية الدوري</span></div>
+      <div class="cmp-row" role="row"><span role="rowheader" data-i18n="cmp.r3">وقتك</span><span role="cell" data-i18n="cmp.r3v">بضع دقائق من الإجابات في المباراة</span><span role="cell" data-i18n="cmp.r3d">لا شيء: نحدّث الموقع فور وصول ملفاتك</span></div>
+      <div class="cmp-row" role="row"><span role="rowheader" data-i18n="cmp.r4">الحالة</span><span role="cell"><span class="status beta" data-i18n="door.v.status">تجريبي</span></span><span role="cell"><span class="status live" data-i18n="door.d.status">قيد الاستخدام في نادٍ محترف</span></span></div>
+    </div>
+
+    <div class="faq" id="faq">
+      <h2 class="reveal" data-i18n="faq.title">أسئلة تطرحها علينا الأندية</h2>
+      <details class="reveal" open><summary data-i18n="faq.q1">هل نحتاج إلى محلّل أو مزوّد بيانات لاستخدام كورة؟</summary><p data-i18n="faq.a1">لا. يحتاج كورة فقط إلى تسجيل المباراة كاملة، من كاميرا المحلّل أو من البث التلفزيوني (تجريبي). وعندما يشكّ، يعرض عليك مقطعًا من 3 ثوانٍ ويطرح سؤالًا بسيطًا.</p></details>
+      <details class="reveal"><summary data-i18n="faq.q2">ما مزوّدو البيانات الذين تقرأ المنصّة ملفاتهم؟</summary><p data-i18n="faq.a2">حاليًا: ملفات المباريات وجداول الدوري من InStat، وسترات GPS من Catapult (OpenField). مزوّد آخر مثل Opta أو Wyscout أو StatsBomb؟ أرسل إلينا أحد ملفاتك، ونكيّف القراءة مع ملفاتك قبل نشر مباراتك الأولى.</p></details>
+      <details class="reveal"><summary data-i18n="faq.q3">هل كل شيء متاح فعلًا بالعربية؟</summary><p data-i18n="faq.a3">نعم. كل شاشة وكل جملة وكل تقرير PDF متاح بالعربية والإنجليزية والفرنسية، مع تخطيط حقيقي من اليمين إلى اليسار بالعربية.</p></details>
+      <details class="reveal"><summary data-i18n="faq.q4">من يمكنه رؤية بيانات نادينا؟</summary><p data-i18n="faq.a4">جهازك الفني فقط. في المنصّة، لكل نادٍ موقعه الخاص، ولا يفتحه إلا الأشخاص الذين تحدّدهم. لا يُنشر شيء على الإنترنت العام.</p></details>
+      <details class="reveal"><summary data-i18n="faq.q5">هل يمكننا التجربة قبل أن نقرّر؟</summary><p data-i18n="faq.a5">نعم. يعرض العرض التجريبي المنصّة على دوري متخيَّل، ويمكنك أن تضع فيه أحد ملفات مبارياتك من InStat: يُحلَّل في متصفحك ولا يُرسَل إلى أي مكان. ولتجربة كورة، راسلنا لعرض على إحدى مبارياتك.</p></details>
+    </div>
+
+    <div class="claude reveal">
+      <div class="claude-mark" aria-hidden="true"><svg viewBox="0 0 40 40"><path d="M14 13 7 20l7 7M26 13l7 7-7 7M22.5 9l-5 22" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+      <div>
+        <p class="kicker" data-i18n="cl.kicker">بُني باستخدام Claude</p>
+        <h3 data-i18n="cl.title">فريق صغير يتقدّم بسرعة.</h3>
+        <p data-i18n="cl.p">بُني المنتجان باستخدام Claude Code. الخطوة التالية: تقارير مباريات يكتبها Claude بثلاث لغات، ومساعد يجيب عن أسئلة جهازك الفني حول مبارياته.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="contact dark" id="contact">
+    <div class="hero-fx" aria-hidden="true"><span class="beam beam-l"></span><span class="beam beam-r"></span><span class="grain"></span></div>
+    <div class="cta reveal">
+      <img class="cta-mark" src="/assets/brand/symbole-craie.svg?v=6" alt="" width="56" height="56" loading="lazy">
+      <h2 data-i18n="cta.title">حدّثنا عن ناديك.</h2>
+      <p class="sub" data-i18n="cta.sub">فيديو، أو بيانات مزوّد، أو كلاهما: نبدأ ممّا لديك.</p>
+      <a class="btn btn-ballon btn-big" href="mailto:haris.garrigos@marmastats.com?subject=Marmastats%20for%20our%20club"><span>haris.garrigos@marmastats.com</span><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M4 10h11m-4-5 5 5-5 5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+    </div>
+  </section>
+</main>
+
+<footer class="foot dark">
+  <img src="/assets/brand/logo-craie.svg?v=6" alt="Marmastats" width="163" height="24" loading="lazy">
+  <span class="foot-links">
+    <span translate="no" dir="ltr">© 2026 Marmastats · Lyon, France</span>
+    <a href="mailto:haris.garrigos@marmastats.com">haris.garrigos@marmastats.com</a>
+    <a href="https://www.linkedin.com/in/haris-garrigos-926b05151/" target="_blank" rel="noopener">LinkedIn</a>
+  </span>
+</footer>
+
+<script src="/i18n.js?v=6"></script>
+<script src="/main.js?v=6"></script>
+</body>
+</html>

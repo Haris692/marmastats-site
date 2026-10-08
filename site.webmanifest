@@ -1,0 +1,13 @@
+{
+  "name": "Marmastats",
+  "short_name": "Marmastats",
+  "description": "Football match analysis from video and data, in Arabic, English and French.",
+  "start_url": "/",
+  "display": "browser",
+  "theme_color": "#0B1513",
+  "background_color": "#0B1513",
+  "icons": [
+    { "src": "/assets/brand/icone-512.png", "sizes": "512x512", "type": "image/png" },
+    { "src": "/assets/brand/apple-touch-icon.png", "sizes": "180x180", "type": "image/png" }
+  ]
+}

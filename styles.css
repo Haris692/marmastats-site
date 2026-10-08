@@ -99,9 +99,10 @@ p { text-wrap: pretty; }
 .nl-data::before { background: var(--bleu); box-shadow: 0 0 10px var(--bleu); }
 .nav-end { display: flex; align-items: center; gap: 12px; }
 .lang { display: flex; padding: 3px; border-radius: 10px; border: 1px solid var(--trait-n); }
-.lang button { font: 600 12.5px/1 var(--mono); letter-spacing: .04em; padding: 7px 10px; border: 0; border-radius: 7px; background: none; color: var(--gris-n); cursor: pointer; }
-.lang button[lang="ar"] { font-family: "IBM Plex Sans Arabic", sans-serif; font-size: 14px; padding-block: 5px; }
-.lang button[aria-pressed="true"] { background: rgba(255, 255, 255, .1); color: #fff; }
+.lang a { display: inline-block; font: 600 12.5px/1 var(--mono); letter-spacing: .04em; padding: 7px 10px; border-radius: 7px; color: var(--gris-n); text-decoration: none; transition: color .2s, background .2s; }
+.lang a[lang="ar"] { font-family: "IBM Plex Sans Arabic", sans-serif; font-size: 14px; padding-block: 5px; }
+.lang a:hover { color: #fff; }
+.lang a[aria-current="page"] { background: rgba(255, 255, 255, .1); color: #fff; }
 
 /* ---------- boutons ---------- */
 .btn {
@@ -322,7 +323,7 @@ svg.door-pic { background: #10261D; direction: ltr; }
 /* ---------- comparaison + Claude ---------- */
 .section { padding: 120px var(--gutter); }
 .compare-sec { background: var(--craie); }
-.compare-sec > h2 { margin: 0 0 34px; text-align: center; font-size: clamp(30px, 3.6vw, 48px); font-weight: 800; letter-spacing: -.025em; }
+.compare-sec > h2 { margin: 0 0 34px; text-align: center; font-size: clamp(30px, 3.6vw, 48px); font-weight: 800; line-height: 1.1; letter-spacing: -.025em; }
 .compare { max-width: 1080px; margin: 0 auto; border: 1px solid var(--trait); border-radius: 22px; overflow: hidden; background: var(--craie-2); box-shadow: var(--ombre); }
 .cmp-row { display: grid; grid-template-columns: 210px 1fr 1fr; border-top: 1px solid var(--trait); }
 .cmp-row:first-child { border-top: 0; }
@@ -333,6 +334,16 @@ svg.door-pic { background: #10261D; direction: ltr; }
 .cmp-head .c-video { color: var(--gazon-f); box-shadow: inset 0 3px 0 var(--gazon-f); }
 .cmp-head .c-data { color: var(--bleu-f); box-shadow: inset 0 3px 0 var(--bleu-f); }
 
+.faq { max-width: 880px; margin: 110px auto 0; }
+.faq h2 { margin: 0 0 28px; text-align: center; font-size: clamp(28px, 3.2vw, 42px); font-weight: 800; line-height: 1.1; letter-spacing: -.025em; }
+.faq details { border-top: 1px solid var(--trait); }
+.faq details:last-of-type { border-bottom: 1px solid var(--trait); }
+.faq summary { display: flex; justify-content: space-between; align-items: center; gap: 18px; padding: 22px 4px; cursor: pointer; list-style: none; font: 700 19px/1.35 var(--display); font-stretch: var(--large); color: var(--encre); }
+.faq summary::-webkit-details-marker { display: none; }
+.faq summary::after { content: "+"; flex: none; display: grid; place-items: center; width: 34px; height: 34px; border-radius: 50%; border: 1px solid var(--trait); font: 500 20px/1 var(--mono); color: var(--gazon-f); transition: transform .3s var(--ease), background .2s, color .2s; }
+.faq summary:hover::after { border-color: var(--encre); }
+.faq details[open] summary::after { transform: rotate(45deg); background: var(--nuit); border-color: var(--nuit); color: var(--ballon); }
+.faq details p { margin: -4px 4px 26px; max-width: 46em; color: var(--gris); font-size: 17px; }
 .claude { display: flex; gap: 24px; align-items: flex-start; max-width: 1080px; margin: 56px auto 0; padding: 30px; border: 1px solid var(--trait); border-radius: 22px; background: transparent; }
 .claude-mark { flex: none; display: grid; place-items: center; width: 58px; height: 58px; border-radius: 16px; background: var(--craie-2); border: 1px solid var(--trait); color: #C96442; }
 .claude-mark svg { width: 30px; height: 30px; }
@@ -361,9 +372,11 @@ svg.door-pic { background: #10261D; direction: ltr; }
 .js .door.reveal.in:hover { transform: translateY(-6px); }
 
 /* ---------- écrans étroits ---------- */
-@media (max-width: 1020px) {
+@media (max-width: 1180px) {
   .nav-links { display: none; }
   .nav-end { margin-inline-start: auto; }
+}
+@media (max-width: 1020px) {
   .doors, .v-grid, .how, .src-grid { grid-template-columns: 1fr; }
   .how { gap: 44px; margin-top: 80px; }
   .ask { position: relative; top: 0; max-width: 520px; }

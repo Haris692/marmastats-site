@@ -1,0 +1,58 @@
+<!doctype html>
+<!-- Gabarit des images de partage 1200 x 630 (assets/og/og-<langue>.png).
+     Rendu par outils/images_partage.py (Chrome sans fenêtre) : og.html?lang=fr -->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="robots" content="noindex">
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@100..112,500..800&family=IBM+Plex+Mono:wght@500&family=Alexandria:wght@700..800&family=IBM+Plex+Sans+Arabic:wght@500&display=block" rel="stylesheet">
+<style>
+  html, body { margin: 0; width: 1200px; height: 630px; overflow: hidden; background: #0B1513; }
+  body { position: relative; font-family: Archivo, sans-serif; color: #fff; isolation: isolate; }
+  [dir="rtl"] body, body[dir="rtl"] { font-family: "IBM Plex Sans Arabic", sans-serif; }
+  .fx { position: absolute; inset: 0; z-index: -1; overflow: hidden; }
+  .fx::before { content: ""; position: absolute; inset: 0; background:
+    radial-gradient(380px 240px at 2% -6%, rgba(255, 236, 190, .26), transparent 70%),
+    radial-gradient(380px 240px at 98% -6%, rgba(255, 236, 190, .26), transparent 70%),
+    radial-gradient(800px 360px at 50% 115%, rgba(61, 220, 151, .14), transparent 70%); }
+  .beam { position: absolute; top: -10%; width: 70%; height: 130%; filter: blur(24px); }
+  .bl { left: -16%; background: conic-gradient(from 130deg at 0% 0%, transparent 0deg, rgba(255, 240, 205, .15) 14deg, rgba(255, 240, 205, .03) 32deg, transparent 46deg); }
+  .br { right: -16%; background: conic-gradient(from 184deg at 100% 0%, transparent 0deg, rgba(255, 240, 205, .03) 14deg, rgba(255, 240, 205, .15) 32deg, transparent 46deg); }
+  .pitch { position: absolute; left: 50%; bottom: -20px; width: 1500px; color: rgba(244, 242, 234, .17);
+    transform: translateX(-50%) perspective(700px) rotateX(64deg); transform-origin: 50% 100%;
+    -webkit-mask-image: linear-gradient(to top, #000 10%, transparent 85%); }
+  .logo { position: absolute; top: 52px; left: 64px; height: 40px; }
+  [dir="rtl"] .logo { left: auto; right: 64px; }
+  .url { position: absolute; top: 62px; right: 64px; font: 500 17px/1 "IBM Plex Mono", monospace; letter-spacing: .12em; color: rgba(244, 242, 234, .6); }
+  [dir="rtl"] .url { right: auto; left: 64px; }
+  h1 { position: absolute; left: 64px; right: 64px; top: 150px; margin: 0; font-size: 70px; font-weight: 800; font-stretch: 112%; line-height: 1.02; letter-spacing: -.025em; }
+  [dir="rtl"] h1 { font-family: Alexandria, sans-serif; font-size: 66px; line-height: 1.24; letter-spacing: 0; top: 136px; }
+  h1 em { font-style: normal; color: #FFC93C; }
+  .tags { position: absolute; left: 64px; right: 64px; bottom: 56px; display: flex; gap: 14px; }
+  .tag { display: inline-flex; align-items: center; gap: 10px; padding: 11px 18px; border-radius: 999px; font: 500 17px/1 "IBM Plex Mono", monospace; letter-spacing: .06em; text-transform: uppercase; }
+  [dir="rtl"] .tag { font-family: "IBM Plex Sans Arabic", sans-serif; font-size: 20px; letter-spacing: 0; }
+  .tag::before { content: ""; width: 9px; height: 9px; border-radius: 50%; background: currentColor; box-shadow: 0 0 12px currentColor; }
+  .tv { color: #3DDC97; background: rgba(61, 220, 151, .12); border: 1px solid rgba(61, 220, 151, .3); }
+  .td { color: #7C9CFF; background: rgba(124, 156, 255, .12); border: 1px solid rgba(124, 156, 255, .3); }
+</style>
+</head>
+<body>
+  <div class="fx"><span class="beam bl"></span><span class="beam br"></span>
+    <svg class="pitch" viewBox="-20 -20 1090 720"><g fill="none" stroke="currentColor" stroke-width="2.4"><rect x="0" y="0" width="1050" height="680"/><path d="M525 0v680"/><circle cx="525" cy="340" r="91.5"/><rect x="0" y="138.5" width="165" height="403"/><rect x="0" y="248.5" width="55" height="183"/><rect x="885" y="138.5" width="165" height="403"/><rect x="995" y="248.5" width="55" height="183"/></g></svg>
+  </div>
+  <img class="logo" src="../assets/brand/logo-craie.svg" alt="">
+  <span class="url">MARMASTATS.COM</span>
+  <h1 id="t"></h1>
+  <div class="tags"><span class="tag tv" id="v"></span><span class="tag td" id="d"></span></div>
+<script src="../i18n.js"></script>
+<script>
+  const l = new URLSearchParams(location.search).get("lang") || "en";
+  const T = window.I18N[l];
+  document.documentElement.lang = l;
+  if (l === "ar") { document.documentElement.dir = "rtl"; document.body.dir = "rtl"; }
+  document.getElementById("t").innerHTML = T["hero.title"];
+  document.getElementById("v").textContent = T["door.v.tag"];
+  document.getElementById("d").textContent = T["door.d.tag"];
+</script>
+</body>
+</html>

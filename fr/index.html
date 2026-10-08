@@ -1,0 +1,441 @@
+<!doctype html>
+<html lang="fr" dir="ltr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Marmastats | Analyse de match de football, vidéo et données</title>
+<meta name="description" content="Kora fait de la vidéo de vos matchs un rapport tactique. La plateforme fait des données InStat et GPS Catapult le site privé du club. Arabe, anglais, français.">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<link rel="canonical" href="https://marmastats.com/fr/">
+<link rel="alternate" hreflang="en" href="https://marmastats.com/">
+<link rel="alternate" hreflang="fr" href="https://marmastats.com/fr/">
+<link rel="alternate" hreflang="ar" href="https://marmastats.com/ar/">
+<link rel="alternate" hreflang="x-default" href="https://marmastats.com/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Marmastats">
+<meta property="og:url" content="https://marmastats.com/fr/">
+<meta property="og:title" content="Marmastats | Analyse de match de football, vidéo et données">
+<meta property="og:description" content="Kora fait de la vidéo de vos matchs un rapport tactique. La plateforme fait des données InStat et GPS Catapult le site privé du club. Arabe, anglais, français.">
+<meta property="og:image" content="https://marmastats.com/assets/og/og-fr.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Marmastats : l&#x27;analyse de match de football à partir de la vidéo et des données, en arabe, anglais et français">
+<meta property="og:locale" content="fr_FR">
+<meta property="og:locale:alternate" content="en_US">
+<meta property="og:locale:alternate" content="ar_AR">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Marmastats | Analyse de match de football, vidéo et données">
+<meta name="twitter:description" content="Kora fait de la vidéo de vos matchs un rapport tactique. La plateforme fait des données InStat et GPS Catapult le site privé du club. Arabe, anglais, français.">
+<meta name="twitter:image" content="https://marmastats.com/assets/og/og-fr.png">
+<meta name="twitter:image:alt" content="Marmastats : l&#x27;analyse de match de football à partir de la vidéo et des données, en arabe, anglais et français">
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "Organization",
+   "@id": "https://marmastats.com/#org",
+   "name": "Marmastats",
+   "url": "https://marmastats.com/",
+   "logo": {
+    "@type": "ImageObject",
+    "url": "https://marmastats.com/assets/brand/icone-512.png",
+    "width": 512,
+    "height": 512
+   },
+   "email": "haris.garrigos@marmastats.com",
+   "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Lyon",
+    "addressCountry": "FR"
+   },
+   "founder": {
+    "@type": "Person",
+    "name": "Haris Garrigos",
+    "sameAs": [
+     "https://www.linkedin.com/in/haris-garrigos-926b05151/"
+    ]
+   }
+  },
+  {
+   "@type": "WebSite",
+   "@id": "https://marmastats.com/#site",
+   "url": "https://marmastats.com/",
+   "name": "Marmastats",
+   "publisher": {
+    "@id": "https://marmastats.com/#org"
+   },
+   "inLanguage": [
+    "en",
+    "fr",
+    "ar"
+   ]
+  },
+  {
+   "@type": "WebPage",
+   "@id": "https://marmastats.com/fr/#page",
+   "url": "https://marmastats.com/fr/",
+   "name": "Marmastats | Analyse de match de football, vidéo et données",
+   "description": "Kora fait de la vidéo de vos matchs un rapport tactique. La plateforme fait des données InStat et GPS Catapult le site privé du club. Arabe, anglais, français.",
+   "inLanguage": "fr",
+   "isPartOf": {
+    "@id": "https://marmastats.com/#site"
+   },
+   "about": {
+    "@id": "https://marmastats.com/#org"
+   },
+   "primaryImageOfPage": "https://marmastats.com/assets/og/og-fr.png"
+  },
+  {
+   "@type": "SoftwareApplication",
+   "name": "Kora",
+   "applicationCategory": "SportsApplication",
+   "operatingSystem": "Web",
+   "description": "Pour les clubs qui filment leurs matchs mais n'ont ni analyste ni fournisseur de données. Kora regarde l'enregistrement, suit chaque joueur, et vous pose la question quand il a un doute.",
+   "inLanguage": [
+    "en",
+    "fr",
+    "ar"
+   ],
+   "publisher": {
+    "@id": "https://marmastats.com/#org"
+   }
+  },
+  {
+   "@type": "SoftwareApplication",
+   "name": "Plateforme Marmastats",
+   "applicationCategory": "SportsApplication",
+   "operatingSystem": "Web",
+   "description": "Pour les clubs qui reçoivent déjà les fichiers de match d'un fournisseur de données. Nous en faisons le site privé du club : la conclusion d'abord, le graphique qui la prouve juste en dessous.",
+   "inLanguage": [
+    "en",
+    "fr",
+    "ar"
+   ],
+   "publisher": {
+    "@id": "https://marmastats.com/#org"
+   }
+  },
+  {
+   "@type": "FAQPage",
+   "@id": "https://marmastats.com/fr/#faq",
+   "inLanguage": "fr",
+   "mainEntity": [
+    {
+     "@type": "Question",
+     "name": "Faut-il un analyste ou un fournisseur de données pour utiliser Kora ?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Non. Kora n'a besoin que de l'enregistrement du match entier, filmé par la caméra de l'analyste ou par la télévision (en bêta). Quand il doute, il vous montre un extrait de 3 secondes et pose une question simple."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Quels fournisseurs de données la plateforme lit-elle ?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Aujourd'hui : les fichiers de match et les classeurs de la ligue d'InStat, et les gilets GPS Catapult (OpenField). Un autre fournisseur, comme Opta, Wyscout ou StatsBomb ? Envoyez-nous un de vos exports : nous adaptons la lecture à vos fichiers avant la mise en ligne de votre premier match."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Tout est-il vraiment disponible en arabe ?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Oui. Chaque écran, chaque phrase et chaque rapport PDF existe en arabe, en anglais et en français, avec une vraie mise en page de droite à gauche en arabe."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Qui peut voir les données de notre club ?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Seulement votre staff. Sur la plateforme, chaque club a son propre site privé, ouvert aux seules personnes que vous désignez. Rien n'est publié sur le web public."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Peut-on essayer avant de se décider ?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Oui. La démo montre la plateforme sur un championnat inventé, et vous pouvez y déposer un de vos fichiers de match InStat : il est analysé dans votre navigateur et n'est envoyé nulle part. Pour Kora, écrivez-nous pour une démonstration sur un de vos matchs."
+     }
+    }
+   ]
+  }
+ ]
+}
+</script>
+<meta name="theme-color" content="#0B1513">
+<link rel="icon" href="/assets/favicon.svg?v=6" type="image/svg+xml">
+<link rel="icon" href="/favicon.ico" sizes="48x48">
+<link rel="apple-touch-icon" href="/assets/brand/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@100..112,400..800&family=IBM+Plex+Mono:wght@500;600&family=Alexandria:wght@600..800&family=IBM+Plex+Sans+Arabic:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/styles.css?v=6">
+</head>
+<body>
+
+<header class="nav" id="nav">
+  <a class="brand" href="/fr/"><img src="/assets/brand/logo-craie.svg?v=6" alt="Marmastats" width="204" height="30"></a>
+  <nav class="nav-links" aria-label="Main">
+    <a href="#video" class="nl-video" data-i18n="nav.video">Analyse vidéo</a>
+    <a href="#data" class="nl-data" data-i18n="nav.data">Données fournisseur</a>
+    <a href="#faq" data-i18n="nav.faq">Questions</a>
+    <a href="#contact" data-i18n="nav.contact">Contact</a>
+  </nav>
+  <div class="nav-end">
+    <nav class="lang" data-i18n-aria="lang.label" aria-label="Langue">
+      <a href="/" hreflang="en" lang="en">EN</a>
+      <a href="/fr/" hreflang="fr" aria-current="page" lang="fr">FR</a>
+      <a href="/ar/" hreflang="ar" lang="ar">ع</a>
+    </nav>
+    <a class="btn btn-ballon btn-small" href="mailto:haris.garrigos@marmastats.com?subject=Marmastats%20demo" data-i18n="nav.cta">Demander une démo</a>
+  </div>
+</header>
+
+<main id="top">
+  <!-- HERO : under the floodlights -->
+  <section class="hero dark">
+    <div class="hero-fx" aria-hidden="true">
+      <span class="beam beam-l"></span><span class="beam beam-r"></span>
+      <svg class="hero-pitch" viewBox="-20 -20 1090 720"><g fill="none" stroke="currentColor" stroke-width="2.4">
+        <rect x="0" y="0" width="1050" height="680"/><path d="M525 0v680"/><circle cx="525" cy="340" r="91.5"/><circle cx="525" cy="340" r="4" fill="currentColor"/>
+        <rect x="0" y="138.5" width="165" height="403"/><rect x="0" y="248.5" width="55" height="183"/><path d="M165 267a91.5 91.5 0 0 1 0 146"/><circle cx="110" cy="340" r="4" fill="currentColor"/>
+        <rect x="885" y="138.5" width="165" height="403"/><rect x="995" y="248.5" width="55" height="183"/><path d="M885 267a91.5 91.5 0 0 0 0 146"/><circle cx="940" cy="340" r="4" fill="currentColor"/>
+      </g></svg>
+      <span class="grain"></span>
+    </div>
+
+    <div class="hero-in">
+      <p class="eyebrow reveal" data-i18n="hero.eyebrow">L'analyse de match pour les clubs de football</p>
+      <h1 class="reveal" data-i18n-html="hero.title">Vos matchs sont filmés.<br>Vos données sont payées.<br><em>Qui les lit vraiment ?</em></h1>
+      <p class="lead reveal" data-i18n-html="hero.sub">Marmastats en fait <b>des rapports que tout le staff comprend d'un coup d'œil</b>, en arabe, en anglais et en français. Partez de ce que vous avez déjà :</p>
+
+      <div class="doors">
+        <a class="door door-video reveal" href="#video">
+          <span class="door-media brk">
+            <svg class="door-pic" viewBox="0 0 360 104" aria-hidden="true">
+              <defs><symbol id="dpb" viewBox="-10 -10 20 20"><path d="M-9-4.5V-9h4.5M4.5-9H9v4.5M9 4.5V9H4.5M-4.5 9H-9V4.5"/></symbol></defs>
+              <rect width="360" height="104" class="dp-grass"/>
+              <g class="dp-stripes"><rect x="0" width="60" height="104"/><rect x="120" width="60" height="104"/><rect x="240" width="60" height="104"/></g>
+              <g class="dp-lines" fill="none"><path d="M0 8h360M110 8v96M360 22h-64v82M360 44h-24v36h24M296 47a20 20 0 0 0 0 28"/><circle cx="110" cy="62" r="24"/></g>
+              <path class="dp-pass" d="M176 72 228 60"/>
+              <g class="dp-us"><circle cx="150" cy="40" r="4.2"/><circle cx="176" cy="72" r="4.2"/><circle cx="205" cy="28" r="4.2"/><circle cx="232" cy="59" r="4.2"/><circle cx="262" cy="86" r="4.2"/></g>
+              <g class="dp-them"><circle cx="252" cy="36" r="4.2"/><circle cx="274" cy="64" r="4.2"/><circle cx="308" cy="48" r="4.2"/><circle cx="318" cy="76" r="4.2"/><circle cx="292" cy="92" r="4.2"/></g>
+              <g class="dp-track"><use href="#dpb" x="140" y="30" width="20" height="20"/><use href="#dpb" x="166" y="62" width="20" height="20"/><use href="#dpb" x="195" y="18" width="20" height="20"/><use href="#dpb" x="252" y="76" width="20" height="20"/><use href="#dpb" x="242" y="26" width="20" height="20"/><use href="#dpb" x="264" y="54" width="20" height="20"/><use href="#dpb" x="298" y="38" width="20" height="20"/><use href="#dpb" x="308" y="66" width="20" height="20"/><use href="#dpb" x="282" y="82" width="20" height="20"/></g>
+              <use href="#dpb" class="dp-focus" x="219" y="46" width="26" height="26"/>
+              <circle class="dp-ball" cx="239" cy="63" r="2.6"/>
+              <g class="dp-tag"><rect x="215" y="30" width="34" height="13" rx="3"/><text x="232" y="39.5">#9</text></g>
+              <g class="dp-rec"><rect x="8" y="14" width="40" height="14" rx="3"/><circle cx="16" cy="21" r="3"/><text x="23" y="24.5">REC</text></g>
+              <g class="dp-time"><rect x="8" y="80" width="40" height="14" rx="3"/><text x="28" y="90.5">71:32</text></g>
+            </svg>
+          </span>
+          <span class="door-body">
+            <span class="door-tag"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="6" width="13" height="12" rx="2.5"/><path d="m16 10.5 5-3v9l-5-3"/></svg><span data-i18n="door.v.tag">Analyse vidéo · Kora</span></span>
+            <h2 data-i18n="door.v.title">Vous avez la vidéo du match</h2>
+            <dl class="door-facts">
+              <div><dt data-i18n="door.in">Vous envoyez</dt><dd data-i18n="door.v.in">Le match entier : caméra de l'analyste ou diffusion TV</dd></div>
+              <div><dt data-i18n="door.out">Vous recevez</dt><dd data-i18n="door.v.out">Organisation de l'équipe, bloc, ligne défensive, moments clés</dd></div>
+            </dl>
+            <span class="door-foot"><span class="status beta" data-i18n="door.v.status">Bêta</span><span class="door-go" data-i18n="door.v.go">Découvrir Kora</span></span>
+          </span>
+        </a>
+        <a class="door door-data reveal" href="#data">
+          <span class="door-media brk door-shot"><img src="/assets/shots/match-fr.jpg" alt="" width="1440" height="1000" decoding="async" fetchpriority="high"></span>
+          <span class="door-body">
+            <span class="door-tag"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 19V9m6 10V5m6 14v-7m5 7H3"/></svg><span data-i18n="door.d.tag">Données fournisseur · Plateforme</span></span>
+            <h2 data-i18n="door.d.title">Vous recevez les données d'un fournisseur</h2>
+            <dl class="door-facts">
+              <div><dt data-i18n="door.in">Vous envoyez</dt><dd data-i18n="door.d.in">Fichiers de match (InStat) et gilets GPS (Catapult)</dd></div>
+              <div><dt data-i18n="door.out">Vous recevez</dt><dd data-i18n="door.d.out">Pages de match, fiches joueurs, classement de la ligue, rapport PDF</dd></div>
+            </dl>
+            <span class="door-foot"><span class="status live" data-i18n="door.d.status">En service dans un club pro</span><span class="door-go" data-i18n="door.d.go">Voir la démo</span></span>
+          </span>
+        </a>
+      </div>
+      <p class="trust reveal"><svg viewBox="0 0 20 20" aria-hidden="true"><path d="m5 10 3.5 3.5L15 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span data-i18n-html="pilot.line">En test avec un club professionnel de la <b>Premier League koweïtienne</b>.</span></p>
+    </div>
+  </section>
+
+  <!-- ============ 01 VIDEO : KORA ============ -->
+  <section class="part part-video" id="video">
+    <div class="part-head reveal">
+      <p class="part-label"><span class="part-num">01</span><span class="part-rule"></span><span data-i18n="v.label">Analyse vidéo</span></p>
+      <h2 data-i18n="v.title">Kora : de la vidéo du match au rapport tactique.</h2>
+      <p class="sub" data-i18n="v.sub">Pour les clubs qui filment leurs matchs mais n'ont ni analyste ni fournisseur de données. Kora regarde l'enregistrement, suit chaque joueur, et vous pose la question quand il a un doute.</p>
+    </div>
+
+    <div class="v-grid">
+      <div class="pitch-frame reveal">
+        <div class="pitch-head">
+          <span class="live"><i></i><span data-i18n="viz.live">Suivi en direct</span></span>
+          <span class="clock" id="clock">00:00</span>
+        </div>
+        <div class="pitch-box brk"><canvas id="pitch" data-i18n-aria="alt.pitch" aria-label="Illustration animée : des joueurs suivis sur un terrain de football, avec le bloc et la ligne défensive" role="img"></canvas></div>
+        <div class="metrics">
+          <div class="metric"><span class="m-label" data-i18n="viz.block">Bloc</span><b id="m-block">—</b></div>
+          <div class="metric m-line"><span class="m-label" data-i18n="viz.line">Ligne défensive</span><b id="m-line">—</b></div>
+          <div class="metric"><span class="m-label" data-i18n="viz.poss">Possession</span><b id="m-poss">—</b></div>
+        </div>
+        <ol class="feed" id="feed" aria-live="off"></ol>
+        <p class="frame-note" data-i18n="viz.note">Illustration. Le vrai rapport se construit à partir de la vidéo de votre match.</p>
+      </div>
+
+      <ul class="points">
+        <li class="reveal"><h3 data-i18n="val.c1t">Déposez le fichier. C'est tout.</h3><p data-i18n="val.c1p">Déposez la vidéo du match et marquez les deux coups d'envoi. Kora fait le reste.</p></li>
+        <li class="reveal"><h3 data-i18n="val.c2t">Il demande quand il doute.</h3><p data-i18n="val.c2p">Au lieu de deviner, Kora montre un extrait de 3 secondes et pose une question simple. Votre réponse tient en un clic.</p></li>
+        <li class="reveal"><h3 data-i18n="val.c3t">Il apprend votre club.</h3><p data-i18n="val.c3p">Chaque réponse est gardée dans le profil du club : couleurs des maillots, terrain, caméra. Au match suivant, Kora le sait déjà.</p></li>
+        <li class="reveal"><h3 data-i18n="val.c4t">Il parle la langue de votre staff.</h3><p data-i18n="val.c4p">Chaque écran et chaque rapport en anglais, en français et en arabe, avec une vraie mise en page de droite à gauche.</p></li>
+      </ul>
+    </div>
+
+    <div class="how">
+      <div>
+        <h3 class="how-title reveal" data-i18n="how.title">Quatre étapes. Une seule est pour vous.</h3>
+        <ol class="steps" id="steps">
+          <li class="step reveal"><span class="step-n">1</span><div><h4 data-i18n="how.s1t">Envoi</h4><p data-i18n="how.s1p">Le match entier, filmé par la caméra de l'analyste ou par la télévision. Si la connexion coupe, l'envoi reprend là où il s'était arrêté.</p></div></li>
+          <li class="step reveal"><span class="step-n">2</span><div><h4 data-i18n="how.s2t">Détection et suivi</h4><p data-i18n="how.s2p">Joueurs, arbitres et ballon repérés image par image, les équipes séparées par la couleur du maillot, le terrain mesuré en vrais mètres.</p></div></li>
+          <li class="step reveal you"><span class="step-n">3</span><div><h4><span data-i18n="how.s3t">Confirmation</span> <span class="pill" data-i18n="how.you">votre part</span></h4><p data-i18n="how.s3p">Là où le modèle doute, il demande. Un court extrait, une question : quelques minutes de réponses par match, au plus.</p></div></li>
+          <li class="step reveal"><span class="step-n">4</span><div><h4 data-i18n="how.s4t">Rapport</h4><p data-i18n="how.s4p">Organisation de l'équipe, taille du bloc, hauteur de la ligne défensive, moments clés : écrit pour les entraîneurs, pas pour les data scientists.</p></div></li>
+        </ol>
+      </div>
+
+      <div class="ask reveal" id="ask">
+        <div class="ask-top">
+          <span class="ask-avatar">K</span>
+          <div><b data-i18n="ask.who">Kora a une question</b><small data-i18n="ask.meta">Match 3 · 2e mi-temps · extrait 1 sur 4</small></div>
+        </div>
+        <div class="clip"><canvas id="clip" aria-hidden="true"></canvas><span class="clip-time">71:32 · 3 s</span><span class="clip-play" aria-hidden="true"></span></div>
+        <p class="ask-q" data-i18n="ask.q">Est-ce un but pour votre équipe ?</p>
+        <div class="ask-btns">
+          <button data-answer="ours" data-i18n="ask.a1">Oui, pour nous</button>
+          <button data-answer="theirs" data-i18n="ask.a2">Pour eux</button>
+          <button data-answer="none" data-i18n="ask.a3">Pas de but</button>
+        </div>
+        <p class="ask-done" id="ask-done" hidden><svg viewBox="0 0 20 20" aria-hidden="true"><path d="m5 10 3.5 3.5L15 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span data-i18n="ask.done">Gardé dans le profil du club. La prochaine fois, Kora le proposera.</span></p>
+      </div>
+    </div>
+
+    <div class="part-cta reveal">
+      <a class="btn btn-video" href="mailto:haris.garrigos@marmastats.com?subject=Kora%20demo"><span data-i18n="v.cta">Demander une démo de Kora</span><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M4 10h11m-4-5 5 5-5 5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+    </div>
+  </section>
+
+  <!-- ============ 02 DATA : PLATFORM ============ -->
+  <section class="part part-data dark" id="data">
+    <span class="grain" aria-hidden="true"></span>
+    <div class="part-head reveal">
+      <p class="part-label"><span class="part-num">02</span><span class="part-rule"></span><span data-i18n="d.label">Données fournisseur</span></p>
+      <h2 data-i18n="d.title">La plateforme : les données de votre fournisseur, lisibles par tout le staff.</h2>
+      <p class="sub" data-i18n="d.sub">Pour les clubs qui reçoivent déjà les fichiers de match d'un fournisseur de données. Nous en faisons le site privé du club : la conclusion d'abord, le graphique qui la prouve juste en dessous.</p>
+    </div>
+
+    <div class="browser-wrap brk reveal">
+      <div class="browser">
+        <div class="browser-bar">
+          <span class="dots"><i></i><i></i><i></i></span>
+          <div class="tabs" role="tablist">
+            <button role="tab" aria-selected="true" data-shot="match" data-i18n="plat.tab1">Match</button>
+            <button role="tab" aria-selected="false" data-shot="ligue" data-i18n="plat.tab2">Ligue</button>
+            <button role="tab" aria-selected="false" data-shot="joueur" data-i18n="plat.tab3">Joueur</button>
+          </div>
+        </div>
+        <div class="shots" id="shots">
+          <img data-shot="match" class="on" src="/assets/shots/match-fr.jpg" data-i18n-alt="Rapport de match de la plateforme : score, chiffres clés et schéma de passes (données de démonstration)" alt="Rapport de match de la plateforme : score, chiffres clés et schéma de passes (données de démonstration)" width="1440" height="1000" loading="lazy">
+          <img data-shot="ligue" src="/assets/shots/ligue-fr.jpg" data-i18n-alt="Classement et tous les clubs de la ligue (données de démonstration)" alt="Classement et tous les clubs de la ligue (données de démonstration)" width="1440" height="1000" loading="lazy">
+          <img data-shot="joueur" src="/assets/shots/joueur-fr.jpg" data-i18n-alt="Fiche joueur avec radar, comparé à l&#x27;effectif et à la ligue (données de démonstration)" alt="Fiche joueur avec radar, comparé à l&#x27;effectif et à la ligue (données de démonstration)" width="1440" height="1000" loading="lazy">
+        </div>
+      </div>
+    </div>
+    <p class="shot-cap reveal"><span id="shot-cap" data-i18n="plat.cap.match">Le match en un coup d'œil, puis le jeu de passes, l'attaque, la construction et le gardien.</span> <span class="muted" data-i18n="plat.demo">Données de démonstration : championnat inventé.</span></p>
+
+    <div class="part-cta reveal">
+      <a class="btn btn-data" href="/demo/app.html?lang=fr"><span data-i18n="d.cta1">Ouvrir la démo</span><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M4 10h11m-4-5 5 5-5 5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+      <a class="btn btn-ghost" href="/demo/?lang=fr#essayer" data-i18n="d.cta2">Essayer avec votre fichier de match</a>
+    </div>
+
+    <div class="sources">
+      <h3 class="reveal" data-i18n="src.title">Les données que nous lisons</h3>
+      <div class="src-grid">
+        <article class="src reveal">
+          <span class="status live" data-i18n="src.ok">Pris en charge</span>
+          <h4 translate="no">InStat</h4>
+          <p data-i18n="src.instat">Fichiers de match (équipe, joueurs, gardien) et classeurs de la ligue, contrôlés avant toute publication.</p>
+        </article>
+        <article class="src reveal">
+          <span class="status live" data-i18n="src.ok">Pris en charge</span>
+          <h4 translate="no">Catapult <small>OpenField</small></h4>
+          <p data-i18n="src.catapult">Gilets GPS à 10 Hz : distance, vitesse de pointe, sprints, accélérations, joueur par joueur et par tranches de 5 minutes.</p>
+        </article>
+        <article class="src src-next reveal">
+          <span class="status next" data-i18n="src.next">Sur demande</span>
+          <h4 translate="no">Opta&nbsp;· Wyscout&nbsp;· StatsBomb</h4>
+          <p data-i18n="src.other">Un autre fournisseur ? Envoyez-nous un de vos exports : nous adaptons la lecture à vos fichiers avant la mise en ligne de votre premier match.</p>
+        </article>
+      </div>
+      <p class="src-note reveal" data-i18n="src.note">Ces noms sont des marques de leurs propriétaires. Marmastats est indépendant et n'est affilié à aucun de ces fournisseurs.</p>
+    </div>
+  </section>
+
+  <!-- ============ WHICH ONE + FAQ ============ -->
+  <section class="section compare-sec">
+    <h2 class="reveal" data-i18n="cmp.title">Laquelle est faite pour vous ?</h2>
+    <div class="compare reveal" role="table">
+      <div class="cmp-row cmp-head" role="row">
+        <span role="columnheader"></span>
+        <span role="columnheader" class="c-video" data-i18n="cmp.video">Analyse vidéo · Kora</span>
+        <span role="columnheader" class="c-data" data-i18n="cmp.data">Données fournisseur · Plateforme</span>
+      </div>
+      <div class="cmp-row" role="row"><span role="rowheader" data-i18n="cmp.r1">Ce qu'il vous faut</span><span role="cell" data-i18n="cmp.r1v">Un enregistrement du match</span><span role="cell" data-i18n="cmp.r1d">Un fournisseur de données (InStat), des gilets GPS si vous en avez</span></div>
+      <div class="cmp-row" role="row"><span role="rowheader" data-i18n="cmp.r2">Ce que vous voyez</span><span role="cell" data-i18n="cmp.r2v">Comment votre équipe s'organise : forme, bloc, ligne défensive, moments clés</span><span role="cell" data-i18n="cmp.r2d">Chaque action comptée : passes, tirs, duels, pour chaque joueur et chaque club de la ligue</span></div>
+      <div class="cmp-row" role="row"><span role="rowheader" data-i18n="cmp.r3">Votre temps</span><span role="cell" data-i18n="cmp.r3v">Quelques minutes de réponses par match</span><span role="cell" data-i18n="cmp.r3d">Aucun : nous mettons le site à jour dès l'arrivée de vos fichiers</span></div>
+      <div class="cmp-row" role="row"><span role="rowheader" data-i18n="cmp.r4">Statut</span><span role="cell"><span class="status beta" data-i18n="door.v.status">Bêta</span></span><span role="cell"><span class="status live" data-i18n="door.d.status">En service dans un club pro</span></span></div>
+    </div>
+
+    <div class="faq" id="faq">
+      <h2 class="reveal" data-i18n="faq.title">Les questions que les clubs nous posent</h2>
+      <details class="reveal" open><summary data-i18n="faq.q1">Faut-il un analyste ou un fournisseur de données pour utiliser Kora ?</summary><p data-i18n="faq.a1">Non. Kora n'a besoin que de l'enregistrement du match entier, filmé par la caméra de l'analyste ou par la télévision (en bêta). Quand il doute, il vous montre un extrait de 3 secondes et pose une question simple.</p></details>
+      <details class="reveal"><summary data-i18n="faq.q2">Quels fournisseurs de données la plateforme lit-elle ?</summary><p data-i18n="faq.a2">Aujourd'hui : les fichiers de match et les classeurs de la ligue d'InStat, et les gilets GPS Catapult (OpenField). Un autre fournisseur, comme Opta, Wyscout ou StatsBomb ? Envoyez-nous un de vos exports : nous adaptons la lecture à vos fichiers avant la mise en ligne de votre premier match.</p></details>
+      <details class="reveal"><summary data-i18n="faq.q3">Tout est-il vraiment disponible en arabe ?</summary><p data-i18n="faq.a3">Oui. Chaque écran, chaque phrase et chaque rapport PDF existe en arabe, en anglais et en français, avec une vraie mise en page de droite à gauche en arabe.</p></details>
+      <details class="reveal"><summary data-i18n="faq.q4">Qui peut voir les données de notre club ?</summary><p data-i18n="faq.a4">Seulement votre staff. Sur la plateforme, chaque club a son propre site privé, ouvert aux seules personnes que vous désignez. Rien n'est publié sur le web public.</p></details>
+      <details class="reveal"><summary data-i18n="faq.q5">Peut-on essayer avant de se décider ?</summary><p data-i18n="faq.a5">Oui. La démo montre la plateforme sur un championnat inventé, et vous pouvez y déposer un de vos fichiers de match InStat : il est analysé dans votre navigateur et n'est envoyé nulle part. Pour Kora, écrivez-nous pour une démonstration sur un de vos matchs.</p></details>
+    </div>
+
+    <div class="claude reveal">
+      <div class="claude-mark" aria-hidden="true"><svg viewBox="0 0 40 40"><path d="M14 13 7 20l7 7M26 13l7 7-7 7M22.5 9l-5 22" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+      <div>
+        <p class="kicker" data-i18n="cl.kicker">Construit avec Claude</p>
+        <h3 data-i18n="cl.title">Une petite équipe qui avance vite.</h3>
+        <p data-i18n="cl.p">Les deux produits sont construits avec Claude Code. Prochaines étapes : des rapports de match rédigés par Claude en trois langues, et un assistant qui répond aux questions du staff sur ses propres matchs.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="contact dark" id="contact">
+    <div class="hero-fx" aria-hidden="true"><span class="beam beam-l"></span><span class="beam beam-r"></span><span class="grain"></span></div>
+    <div class="cta reveal">
+      <img class="cta-mark" src="/assets/brand/symbole-craie.svg?v=6" alt="" width="56" height="56" loading="lazy">
+      <h2 data-i18n="cta.title">Parlez-nous de votre club.</h2>
+      <p class="sub" data-i18n="cta.sub">Vidéo, données d'un fournisseur ou les deux : on part de ce que vous avez déjà.</p>
+      <a class="btn btn-ballon btn-big" href="mailto:haris.garrigos@marmastats.com?subject=Marmastats%20for%20our%20club"><span>haris.garrigos@marmastats.com</span><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M4 10h11m-4-5 5 5-5 5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+    </div>
+  </section>
+</main>
+
+<footer class="foot dark">
+  <img src="/assets/brand/logo-craie.svg?v=6" alt="Marmastats" width="163" height="24" loading="lazy">
+  <span class="foot-links">
+    <span translate="no" dir="ltr">© 2026 Marmastats · Lyon, France</span>
+    <a href="mailto:haris.garrigos@marmastats.com">haris.garrigos@marmastats.com</a>
+    <a href="https://www.linkedin.com/in/haris-garrigos-926b05151/" target="_blank" rel="noopener">LinkedIn</a>
+  </span>
+</footer>
+
+<script src="/i18n.js?v=6"></script>
+<script src="/main.js?v=6"></script>
+</body>
+</html>

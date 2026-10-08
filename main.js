@@ -5,43 +5,15 @@
   const $ = (s, r = document) => r.querySelector(s);
   const $$ = (s, r = document) => [...r.querySelectorAll(s)];
 
-  /* ---------------- language ---------------- */
-  let lang = "en";
+  /* ---------------- language ----------------
+     One static page per language (/, /fr/, /ar/), written by outils/construire_pages.py:
+     the texts are already in the HTML. The root page sends a French or Arabic visitor
+     to their page from a small script in its <head>; a click on a language is remembered. */
+  const lang = I18N[document.documentElement.lang] ? document.documentElement.lang : "en";
   const t = (k) => (I18N[lang] && I18N[lang][k]) ?? I18N.en[k] ?? k;
-
-  function pickLang() {
-    const q = new URLSearchParams(location.search).get("lang");
-    if (q && I18N[q]) return q;
-    try { const s = localStorage.getItem("mm-lang"); if (s && I18N[s]) return s; } catch (e) {}
-    const n = (navigator.language || "en").slice(0, 2);
-    return I18N[n] ? n : "en";
-  }
-
-  function setLang(l) {
-    lang = l;
-    const html = document.documentElement;
-    html.lang = l;
-    html.dir = l === "ar" ? "rtl" : "ltr";
-    document.title = t("meta.title");
-    $$("[data-i18n]").forEach((el) => { el.textContent = t(el.dataset.i18n); });
-    $$("[data-i18n-html]").forEach((el) => { el.innerHTML = t(el.dataset.i18nHtml); });
-    $$(".lang button").forEach((b) => b.setAttribute("aria-pressed", String(b.dataset.lang === l)));
-    $$("#shots img").forEach((img) => { img.src = `assets/shots/${img.dataset.shot}-${l}.jpg`; });
-    $$(".door-shot img").forEach((img) => { img.src = `assets/shots/match-${l}.jpg`; });
-    const cur = $(".tabs [aria-selected=true]");
-    if (cur) $("#shot-cap").textContent = t("plat.cap." + cur.dataset.shot);
-    buildMarquee();
-    try { localStorage.setItem("mm-lang", l); } catch (e) {}
-  }
-  $$(".lang button").forEach((b) => b.addEventListener("click", () => setLang(b.dataset.lang)));
-
-  function buildMarquee() {
-    const words = t("marquee");
-    const track = $("#marquee");
-    if (!track) return;
-    const html = words.map((w) => `<span>${w}</span>`).join("");
-    track.innerHTML = html + html;
-  }
+  $$(".lang a").forEach((a) => a.addEventListener("click", () => {
+    try { localStorage.setItem("mm-lang", a.hreflang); } catch (e) {}
+  }));
 
   /* ---------------- nav / reveal / glow ---------------- */
   const nav = $("#nav");
@@ -459,7 +431,6 @@
   }
 
   // warm the simulation so the first frame already looks like a match
-  setLang(pickLang());
   for (let i = 0; i < 240; i++) step(1 / 30);
   possTime = [56, 44];
   metrics();
