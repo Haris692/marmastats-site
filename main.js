@@ -27,6 +27,7 @@
     $$("[data-i18n-html]").forEach((el) => { el.innerHTML = t(el.dataset.i18nHtml); });
     $$(".lang button").forEach((b) => b.setAttribute("aria-pressed", String(b.dataset.lang === l)));
     $$("#shots img").forEach((img) => { img.src = `assets/shots/${img.dataset.shot}-${l}.jpg`; });
+    $$(".door-shot img").forEach((img) => { img.src = `assets/shots/match-${l}.jpg`; });
     const cur = $(".tabs [aria-selected=true]");
     if (cur) $("#shot-cap").textContent = t("plat.cap." + cur.dataset.shot);
     buildMarquee();
@@ -37,6 +38,7 @@
   function buildMarquee() {
     const words = t("marquee");
     const track = $("#marquee");
+    if (!track) return;
     const html = words.map((w) => `<span>${w}</span>`).join("");
     track.innerHTML = html + html;
   }
@@ -191,7 +193,7 @@
   const cv = $("#pitch");
   const ctx = cv.getContext("2d");
   let dpr = sizeCanvas(cv);
-  addEventListener("resize", () => { dpr = sizeCanvas(cv); clipDpr = sizeCanvas(clip); });
+  addEventListener("resize", () => { dpr = sizeCanvas(cv); clipDpr = sizeCanvas(clip); draw(performance.now()); drawClip(reduced ? 1900 : performance.now()); });
 
   const L = 105, Wd = 68;
   const rnd = (a, b) => a + Math.random() * (b - a);
