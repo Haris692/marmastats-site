@@ -5,29 +5,21 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Marmastats — Match analysis for football clubs</title>
 <meta name="description" content="Two ways in: Kora reads the video of your match, the data platform turns your provider's exports into a private club website. English, French and Arabic.">
-<meta name="theme-color" content="#ffffff">
+<meta name="theme-color" content="#0B1513">
 <meta property="og:title" content="Marmastats — Match analysis for football clubs">
 <meta property="og:description" content="Video analysis (Kora) and provider data (InStat, Catapult GPS) turned into reports your whole staff can read. English, French and Arabic.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://marmastats.com/">
-<link rel="icon" href="assets/favicon.svg?v=4" type="image/svg+xml">
+<link rel="icon" href="assets/favicon.svg?v=5" type="image/svg+xml">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="styles.css?v=4">
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,100..900&family=IBM+Plex+Mono:wght@500;600&family=Alexandria:wght@500..800&family=IBM+Plex+Sans+Arabic:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css?v=5">
 </head>
 <body>
 
 <header class="nav" id="nav">
-  <a class="brand" href="#top" aria-label="Marmastats">
-    <svg class="brand-mark" viewBox="0 0 32 32" aria-hidden="true">
-      <path d="M7 24.5V8.5l9 10 9-10v16" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
-      <circle cx="7" cy="24.5" r="2.7" fill="currentColor"/><circle cx="7" cy="8.5" r="2.7" fill="currentColor"/>
-      <circle cx="25" cy="8.5" r="2.7" fill="currentColor"/><circle cx="25" cy="24.5" r="2.7" fill="currentColor"/>
-      <circle cx="16" cy="18.5" r="3.4" class="bm-ball"/>
-    </svg>
-    <span class="brand-word" translate="no">marma<b>stats</b></span>
-  </a>
+  <a class="brand" href="#top"><img src="assets/brand/logo-craie.svg?v=5" alt="Marmastats" width="204" height="30"></a>
   <nav class="nav-links" aria-label="Main">
     <a href="#video" class="nl-video" data-i18n="nav.video">Video analysis</a>
     <a href="#data" class="nl-data" data-i18n="nav.data">Provider data</a>
@@ -39,60 +31,78 @@
       <button data-lang="fr" aria-pressed="false">FR</button>
       <button data-lang="ar" aria-pressed="false" lang="ar">ع</button>
     </div>
-    <a class="btn btn-small" href="mailto:haris.garrigos@marmastats.com?subject=Marmastats%20demo" data-i18n="nav.cta">Book a demo</a>
+    <a class="btn btn-ballon btn-small" href="mailto:haris.garrigos@marmastats.com?subject=Marmastats%20demo" data-i18n="nav.cta">Book a demo</a>
   </div>
 </header>
 
 <main id="top">
-  <!-- HERO : two doors -->
-  <section class="hero">
-    <p class="eyebrow reveal" data-i18n="hero.eyebrow">Match analysis for football clubs</p>
-    <h1 class="reveal" data-i18n-html="hero.title">Your matches are filmed. Your data is paid for. <em>Who actually reads them?</em></h1>
-    <p class="lead reveal" data-i18n-html="hero.sub">Marmastats turns them into <b>reports your whole staff understands at a glance</b>, in Arabic, English and French. Start from what you already have:</p>
-
-    <div class="doors">
-      <a class="door door-video reveal" href="#video">
-        <svg class="door-pic" viewBox="0 0 360 104" aria-hidden="true">
-          <defs><symbol id="dpb" viewBox="-10 -10 20 20"><path d="M-9-4.5V-9h4.5M4.5-9H9v4.5M9 4.5V9H4.5M-4.5 9H-9V4.5"/></symbol></defs>
-          <rect width="360" height="104" class="dp-grass"/>
-          <g class="dp-stripes"><rect x="0" width="60" height="104"/><rect x="120" width="60" height="104"/><rect x="240" width="60" height="104"/></g>
-          <g class="dp-lines" fill="none"><path d="M0 8h360M110 8v96M360 22h-64v82M360 44h-24v36h24M296 47a20 20 0 0 0 0 28"/><circle cx="110" cy="62" r="24"/></g>
-          <path class="dp-pass" d="M176 72 228 60"/>
-          <g class="dp-us"><circle cx="150" cy="40" r="4.2"/><circle cx="176" cy="72" r="4.2"/><circle cx="205" cy="28" r="4.2"/><circle cx="232" cy="59" r="4.2"/><circle cx="262" cy="86" r="4.2"/></g>
-          <g class="dp-them"><circle cx="252" cy="36" r="4.2"/><circle cx="274" cy="64" r="4.2"/><circle cx="308" cy="48" r="4.2"/><circle cx="318" cy="76" r="4.2"/><circle cx="292" cy="92" r="4.2"/></g>
-          <g class="dp-track"><use href="#dpb" x="140" y="30" width="20" height="20"/><use href="#dpb" x="166" y="62" width="20" height="20"/><use href="#dpb" x="195" y="18" width="20" height="20"/><use href="#dpb" x="252" y="76" width="20" height="20"/><use href="#dpb" x="242" y="26" width="20" height="20"/><use href="#dpb" x="264" y="54" width="20" height="20"/><use href="#dpb" x="298" y="38" width="20" height="20"/><use href="#dpb" x="308" y="66" width="20" height="20"/><use href="#dpb" x="282" y="82" width="20" height="20"/></g>
-          <use href="#dpb" class="dp-focus" x="219" y="46" width="26" height="26"/>
-          <circle class="dp-ball" cx="239" cy="63" r="2.4"/>
-          <g class="dp-tag"><rect x="215" y="30" width="34" height="13" rx="3"/><text x="232" y="39.5">#9</text></g>
-          <g class="dp-rec"><rect x="8" y="14" width="40" height="14" rx="3"/><circle cx="16" cy="21" r="3"/><text x="23" y="24.5">REC</text></g>
-          <g class="dp-time"><rect x="8" y="80" width="40" height="14" rx="3"/><text x="28" y="90.5">71:32</text></g>
-        </svg>
-        <span class="door-tag"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="6" width="13" height="12" rx="2.5"/><path d="m16 10.5 5-3v9l-5-3"/></svg><span data-i18n="door.v.tag">Video analysis · Kora</span></span>
-        <h2 data-i18n="door.v.title">You have the video of the match</h2>
-        <dl class="door-facts">
-          <div><dt data-i18n="door.in">You send</dt><dd data-i18n="door.v.in">The full match: analyst camera or TV broadcast</dd></div>
-          <div><dt data-i18n="door.out">You get</dt><dd data-i18n="door.v.out">Team shape, block, defensive line, key moments</dd></div>
-        </dl>
-        <span class="door-foot"><span class="status beta" data-i18n="door.v.status">Beta</span><span class="door-go" data-i18n="door.v.go">Discover Kora</span></span>
-      </a>
-      <a class="door door-data reveal" href="#data">
-        <span class="door-pic door-shot"><img src="assets/shots/match-en.jpg" alt="" width="1440" height="1000" decoding="async"></span>
-        <span class="door-tag"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 19V9m6 10V5m6 14v-7m5 7H3"/></svg><span data-i18n="door.d.tag">Provider data · Platform</span></span>
-        <h2 data-i18n="door.d.title">You receive data from a provider</h2>
-        <dl class="door-facts">
-          <div><dt data-i18n="door.in">You send</dt><dd data-i18n="door.d.in">Match files (InStat) and GPS vests (Catapult)</dd></div>
-          <div><dt data-i18n="door.out">You get</dt><dd data-i18n="door.d.out">Match pages, player profiles, league ranking, PDF report</dd></div>
-        </dl>
-        <span class="door-foot"><span class="status live" data-i18n="door.d.status">In use with a pro club</span><span class="door-go" data-i18n="door.d.go">See the demo</span></span>
-      </a>
+  <!-- HERO : under the floodlights -->
+  <section class="hero dark">
+    <div class="hero-fx" aria-hidden="true">
+      <span class="beam beam-l"></span><span class="beam beam-r"></span>
+      <svg class="hero-pitch" viewBox="-20 -20 1090 720"><g fill="none" stroke="currentColor" stroke-width="2.4">
+        <rect x="0" y="0" width="1050" height="680"/><path d="M525 0v680"/><circle cx="525" cy="340" r="91.5"/><circle cx="525" cy="340" r="4" fill="currentColor"/>
+        <rect x="0" y="138.5" width="165" height="403"/><rect x="0" y="248.5" width="55" height="183"/><path d="M165 267a91.5 91.5 0 0 1 0 146"/><circle cx="110" cy="340" r="4" fill="currentColor"/>
+        <rect x="885" y="138.5" width="165" height="403"/><rect x="995" y="248.5" width="55" height="183"/><path d="M885 267a91.5 91.5 0 0 0 0 146"/><circle cx="940" cy="340" r="4" fill="currentColor"/>
+      </g></svg>
+      <span class="grain"></span>
     </div>
-    <p class="trust reveal"><svg viewBox="0 0 20 20" aria-hidden="true"><path d="m5 10 3.5 3.5L15 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span data-i18n-html="pilot.line">Piloted with a professional club of the <b>Kuwaiti Premier League</b>.</span></p>
+
+    <div class="hero-in">
+      <p class="eyebrow reveal" data-i18n="hero.eyebrow">Match analysis for football clubs</p>
+      <h1 class="reveal" data-i18n-html="hero.title">Your matches are filmed.<br>Your data is paid for.<br><em>Who actually reads them?</em></h1>
+      <p class="lead reveal" data-i18n-html="hero.sub">Marmastats turns them into <b>reports your whole staff understands at a glance</b>, in Arabic, English and French. Start from what you already have:</p>
+
+      <div class="doors">
+        <a class="door door-video reveal" href="#video">
+          <span class="door-media brk">
+            <svg class="door-pic" viewBox="0 0 360 104" aria-hidden="true">
+              <defs><symbol id="dpb" viewBox="-10 -10 20 20"><path d="M-9-4.5V-9h4.5M4.5-9H9v4.5M9 4.5V9H4.5M-4.5 9H-9V4.5"/></symbol></defs>
+              <rect width="360" height="104" class="dp-grass"/>
+              <g class="dp-stripes"><rect x="0" width="60" height="104"/><rect x="120" width="60" height="104"/><rect x="240" width="60" height="104"/></g>
+              <g class="dp-lines" fill="none"><path d="M0 8h360M110 8v96M360 22h-64v82M360 44h-24v36h24M296 47a20 20 0 0 0 0 28"/><circle cx="110" cy="62" r="24"/></g>
+              <path class="dp-pass" d="M176 72 228 60"/>
+              <g class="dp-us"><circle cx="150" cy="40" r="4.2"/><circle cx="176" cy="72" r="4.2"/><circle cx="205" cy="28" r="4.2"/><circle cx="232" cy="59" r="4.2"/><circle cx="262" cy="86" r="4.2"/></g>
+              <g class="dp-them"><circle cx="252" cy="36" r="4.2"/><circle cx="274" cy="64" r="4.2"/><circle cx="308" cy="48" r="4.2"/><circle cx="318" cy="76" r="4.2"/><circle cx="292" cy="92" r="4.2"/></g>
+              <g class="dp-track"><use href="#dpb" x="140" y="30" width="20" height="20"/><use href="#dpb" x="166" y="62" width="20" height="20"/><use href="#dpb" x="195" y="18" width="20" height="20"/><use href="#dpb" x="252" y="76" width="20" height="20"/><use href="#dpb" x="242" y="26" width="20" height="20"/><use href="#dpb" x="264" y="54" width="20" height="20"/><use href="#dpb" x="298" y="38" width="20" height="20"/><use href="#dpb" x="308" y="66" width="20" height="20"/><use href="#dpb" x="282" y="82" width="20" height="20"/></g>
+              <use href="#dpb" class="dp-focus" x="219" y="46" width="26" height="26"/>
+              <circle class="dp-ball" cx="239" cy="63" r="2.6"/>
+              <g class="dp-tag"><rect x="215" y="30" width="34" height="13" rx="3"/><text x="232" y="39.5">#9</text></g>
+              <g class="dp-rec"><rect x="8" y="14" width="40" height="14" rx="3"/><circle cx="16" cy="21" r="3"/><text x="23" y="24.5">REC</text></g>
+              <g class="dp-time"><rect x="8" y="80" width="40" height="14" rx="3"/><text x="28" y="90.5">71:32</text></g>
+            </svg>
+          </span>
+          <span class="door-body">
+            <span class="door-tag"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="6" width="13" height="12" rx="2.5"/><path d="m16 10.5 5-3v9l-5-3"/></svg><span data-i18n="door.v.tag">Video analysis · Kora</span></span>
+            <h2 data-i18n="door.v.title">You have the video of the match</h2>
+            <dl class="door-facts">
+              <div><dt data-i18n="door.in">You send</dt><dd data-i18n="door.v.in">The full match: analyst camera or TV broadcast</dd></div>
+              <div><dt data-i18n="door.out">You get</dt><dd data-i18n="door.v.out">Team shape, block, defensive line, key moments</dd></div>
+            </dl>
+            <span class="door-foot"><span class="status beta" data-i18n="door.v.status">Beta</span><span class="door-go" data-i18n="door.v.go">Discover Kora</span></span>
+          </span>
+        </a>
+        <a class="door door-data reveal" href="#data">
+          <span class="door-media brk door-shot"><img src="assets/shots/match-en.jpg" alt="" width="1440" height="1000" decoding="async"></span>
+          <span class="door-body">
+            <span class="door-tag"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 19V9m6 10V5m6 14v-7m5 7H3"/></svg><span data-i18n="door.d.tag">Provider data · Platform</span></span>
+            <h2 data-i18n="door.d.title">You receive data from a provider</h2>
+            <dl class="door-facts">
+              <div><dt data-i18n="door.in">You send</dt><dd data-i18n="door.d.in">Match files (InStat) and GPS vests (Catapult)</dd></div>
+              <div><dt data-i18n="door.out">You get</dt><dd data-i18n="door.d.out">Match pages, player profiles, league ranking, PDF report</dd></div>
+            </dl>
+            <span class="door-foot"><span class="status live" data-i18n="door.d.status">In use with a pro club</span><span class="door-go" data-i18n="door.d.go">See the demo</span></span>
+          </span>
+        </a>
+      </div>
+      <p class="trust reveal"><svg viewBox="0 0 20 20" aria-hidden="true"><path d="m5 10 3.5 3.5L15 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span data-i18n-html="pilot.line">Piloted with a professional club of the <b>Kuwaiti Premier League</b>.</span></p>
+    </div>
   </section>
 
-  <!-- ============ VIDEO : KORA ============ -->
+  <!-- ============ 01 VIDEO : KORA ============ -->
   <section class="part part-video" id="video">
     <div class="part-head reveal">
-      <p class="part-label"><span class="part-num">1</span><span data-i18n="v.label">Video analysis</span></p>
+      <p class="part-label"><span class="part-num">01</span><span class="part-rule"></span><span data-i18n="v.label">Video analysis</span></p>
       <h2 data-i18n="v.title">Kora: from the match video to the tactical report.</h2>
       <p class="sub" data-i18n="v.sub">For clubs that film their matches but have no analyst and no data provider. Kora watches the recording, tracks every player, and asks you when it is not sure.</p>
     </div>
@@ -103,10 +113,10 @@
           <span class="live"><i></i><span data-i18n="viz.live">Live tracking</span></span>
           <span class="clock" id="clock">00:00</span>
         </div>
-        <div class="pitch-box"><canvas id="pitch" aria-label="Animated illustration: players tracked on a football pitch" role="img"></canvas></div>
+        <div class="pitch-box brk"><canvas id="pitch" aria-label="Animated illustration: players tracked on a football pitch" role="img"></canvas></div>
         <div class="metrics">
           <div class="metric"><span class="m-label" data-i18n="viz.block">Block</span><b id="m-block">—</b></div>
-          <div class="metric"><span class="m-label" data-i18n="viz.line">Defensive line</span><b id="m-line">—</b></div>
+          <div class="metric m-line"><span class="m-label" data-i18n="viz.line">Defensive line</span><b id="m-line">—</b></div>
           <div class="metric"><span class="m-label" data-i18n="viz.poss">Possession</span><b id="m-poss">—</b></div>
         </div>
         <ol class="feed" id="feed" aria-live="off"></ol>
@@ -153,27 +163,30 @@
     </div>
   </section>
 
-  <!-- ============ DATA : PLATFORM ============ -->
-  <section class="part part-data" id="data">
+  <!-- ============ 02 DATA : PLATFORM ============ -->
+  <section class="part part-data dark" id="data">
+    <span class="grain" aria-hidden="true"></span>
     <div class="part-head reveal">
-      <p class="part-label"><span class="part-num">2</span><span data-i18n="d.label">Provider data</span></p>
+      <p class="part-label"><span class="part-num">02</span><span class="part-rule"></span><span data-i18n="d.label">Provider data</span></p>
       <h2 data-i18n="d.title">The platform: your provider's data, readable by the whole staff.</h2>
       <p class="sub" data-i18n="d.sub">For clubs that already receive match files from a data provider. We turn them into a private club website: the conclusion first, the chart that proves it just below.</p>
     </div>
 
-    <div class="browser reveal">
-      <div class="browser-bar">
-        <span class="dots"><i></i><i></i><i></i></span>
-        <div class="tabs" role="tablist">
-          <button role="tab" aria-selected="true" data-shot="match" data-i18n="plat.tab1">Match</button>
-          <button role="tab" aria-selected="false" data-shot="ligue" data-i18n="plat.tab2">League</button>
-          <button role="tab" aria-selected="false" data-shot="joueur" data-i18n="plat.tab3">Player</button>
+    <div class="browser-wrap brk reveal">
+      <div class="browser">
+        <div class="browser-bar">
+          <span class="dots"><i></i><i></i><i></i></span>
+          <div class="tabs" role="tablist">
+            <button role="tab" aria-selected="true" data-shot="match" data-i18n="plat.tab1">Match</button>
+            <button role="tab" aria-selected="false" data-shot="ligue" data-i18n="plat.tab2">League</button>
+            <button role="tab" aria-selected="false" data-shot="joueur" data-i18n="plat.tab3">Player</button>
+          </div>
         </div>
-      </div>
-      <div class="shots" id="shots">
-        <img data-shot="match" class="on" src="assets/shots/match-en.jpg" alt="Match report screen of the platform (demo data)" width="1440" height="1000" loading="lazy">
-        <img data-shot="ligue" src="assets/shots/ligue-en.jpg" alt="League standings screen (demo data)" width="1440" height="1000" loading="lazy">
-        <img data-shot="joueur" src="assets/shots/joueur-en.jpg" alt="Player profile and radar screen (demo data)" width="1440" height="1000" loading="lazy">
+        <div class="shots" id="shots">
+          <img data-shot="match" class="on" src="assets/shots/match-en.jpg" alt="Match report screen of the platform (demo data)" width="1440" height="1000" loading="lazy">
+          <img data-shot="ligue" src="assets/shots/ligue-en.jpg" alt="League standings screen (demo data)" width="1440" height="1000" loading="lazy">
+          <img data-shot="joueur" src="assets/shots/joueur-en.jpg" alt="Player profile and radar screen (demo data)" width="1440" height="1000" loading="lazy">
+        </div>
       </div>
     </div>
     <p class="shot-cap reveal"><span id="shot-cap" data-i18n="plat.cap.match">The match at a glance, then passing structure, attacking, building play and the goalkeeper.</span> <span class="muted" data-i18n="plat.demo">Demo data: invented league.</span></p>
@@ -194,11 +207,11 @@
         <article class="src reveal">
           <span class="status live" data-i18n="src.ok">Supported</span>
           <h4 translate="no">Catapult <small>OpenField</small></h4>
-          <p data-i18n="src.catapult">GPS vests at 10 Hz: distance, top speed, sprints, accelerations, minute by minute and player by player.</p>
+          <p data-i18n="src.catapult">GPS vests at 10 Hz: distance, top speed, sprints, accelerations, player by player and every 5 minutes.</p>
         </article>
         <article class="src src-next reveal">
           <span class="status next" data-i18n="src.next">On request</span>
-          <h4 translate="no">Opta · Wyscout · StatsBomb</h4>
+          <h4 translate="no">Opta&nbsp;· Wyscout&nbsp;· StatsBomb</h4>
           <p data-i18n="src.other">Another provider? Send us one of your exports: we adapt the reading to your files before your first match goes online.</p>
         </article>
       </div>
@@ -216,15 +229,12 @@
         <span role="columnheader" class="c-data" data-i18n="cmp.data">Provider data · Platform</span>
       </div>
       <div class="cmp-row" role="row"><span role="rowheader" data-i18n="cmp.r1">What you need</span><span role="cell" data-i18n="cmp.r1v">A recording of the match</span><span role="cell" data-i18n="cmp.r1d">A data provider (InStat), GPS vests if you have them</span></div>
-      <div class="cmp-row" role="row"><span role="rowheader" data-i18n="cmp.r2">What it shows</span><span role="cell" data-i18n="cmp.r2v">How your team is organised: shape, block, defensive line, key moments</span><span role="cell" data-i18n="cmp.r2d">Every action counted: passes, shots, duels, every player, every club of the league</span></div>
-      <div class="cmp-row" role="row"><span role="rowheader" data-i18n="cmp.r3">Your time</span><span role="cell" data-i18n="cmp.r3v">A few minutes of answers per match</span><span role="cell" data-i18n="cmp.r3d">None: the site updates when the files arrive</span></div>
+      <div class="cmp-row" role="row"><span role="rowheader" data-i18n="cmp.r2">What it shows</span><span role="cell" data-i18n="cmp.r2v">How your team is organised: shape, block, defensive line, key moments</span><span role="cell" data-i18n="cmp.r2d">Every action counted: passes, shots, duels, for every player and every club of the league</span></div>
+      <div class="cmp-row" role="row"><span role="rowheader" data-i18n="cmp.r3">Your time</span><span role="cell" data-i18n="cmp.r3v">A few minutes of answers per match</span><span role="cell" data-i18n="cmp.r3d">None: we update the site when your files arrive</span></div>
       <div class="cmp-row" role="row"><span role="rowheader" data-i18n="cmp.r4">Status</span><span role="cell"><span class="status beta" data-i18n="door.v.status">Beta</span></span><span role="cell"><span class="status live" data-i18n="door.d.status">In use with a pro club</span></span></div>
     </div>
-  </section>
 
-  <!-- ============ PILOT + CLAUDE ============ -->
-  <section class="section about reveal">
-    <div class="claude">
+    <div class="claude reveal">
       <div class="claude-mark" aria-hidden="true"><svg viewBox="0 0 40 40"><path d="M14 13 7 20l7 7M26 13l7 7-7 7M22.5 9l-5 22" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
       <div>
         <p class="kicker" data-i18n="cl.kicker">Built with Claude</p>
@@ -235,22 +245,27 @@
   </section>
 
   <!-- CONTACT -->
-  <section class="section" id="contact">
+  <section class="contact dark" id="contact">
+    <div class="hero-fx" aria-hidden="true"><span class="beam beam-l"></span><span class="beam beam-r"></span><span class="grain"></span></div>
     <div class="cta reveal">
+      <img class="cta-mark" src="assets/brand/symbole-craie.svg?v=5" alt="" width="56" height="56">
       <h2 data-i18n="cta.title">Tell us about your club.</h2>
       <p class="sub" data-i18n="cta.sub">Video, provider data or both: we start from what you already have.</p>
-      <a class="btn btn-big" href="mailto:haris.garrigos@marmastats.com?subject=Marmastats%20for%20our%20club"><span>haris.garrigos@marmastats.com</span><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M4 10h11m-4-5 5 5-5 5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+      <a class="btn btn-ballon btn-big" href="mailto:haris.garrigos@marmastats.com?subject=Marmastats%20for%20our%20club"><span>haris.garrigos@marmastats.com</span><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M4 10h11m-4-5 5 5-5 5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
     </div>
   </section>
 </main>
 
-<footer class="foot">
-  <span translate="no" dir="ltr">© 2026 Marmastats · Lyon, France</span>
-  <a href="mailto:haris.garrigos@marmastats.com">haris.garrigos@marmastats.com</a>
-  <a href="https://www.linkedin.com/in/haris-garrigos-926b05151/" target="_blank" rel="noopener">LinkedIn</a>
+<footer class="foot dark">
+  <img src="assets/brand/logo-craie.svg?v=5" alt="Marmastats" width="163" height="24">
+  <span class="foot-links">
+    <span translate="no" dir="ltr">© 2026 Marmastats · Lyon, France</span>
+    <a href="mailto:haris.garrigos@marmastats.com">haris.garrigos@marmastats.com</a>
+    <a href="https://www.linkedin.com/in/haris-garrigos-926b05151/" target="_blank" rel="noopener">LinkedIn</a>
+  </span>
 </footer>
 
-<script src="i18n.js?v=4"></script>
-<script src="main.js?v=4"></script>
+<script src="i18n.js?v=5"></script>
+<script src="main.js?v=5"></script>
 </body>
 </html>

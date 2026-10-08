@@ -1,0 +1,306 @@
+<!doctype html>
+<html lang="fr" dir="ltr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Marmastats — Charte graphique</title>
+<meta name="theme-color" content="#0B1513">
+<link rel="icon" href="../assets/favicon.svg?v=5" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,100..900&family=IBM+Plex+Mono:wght@500;600&family=Alexandria:wght@500..800&family=IBM+Plex+Sans+Arabic:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../styles.css?v=5">
+<style>
+  .ch-cover { padding: 96px var(--gutter) 88px; overflow: hidden; }
+  .ch-cover .hero-fx .hero-pitch { bottom: -14%; }
+  .ch-cover img.ch-logo { width: min(520px, 86%); height: auto; }
+  .ch-cover h1 { margin: 44px 0 10px; font-size: clamp(40px, 6vw, 84px); font-weight: 800; line-height: 1; letter-spacing: -.03em; }
+  .ch-cover h1 em { font-style: normal; color: var(--ballon); }
+  .ch-cover .ch-ver { font: 500 13px/1.4 var(--mono); letter-spacing: .14em; text-transform: uppercase; color: var(--gris-n); }
+  .ch-princ { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; margin-top: 56px; }
+  .ch-princ div { padding: 22px; border: 1px solid var(--trait-n); border-radius: 18px; background: rgba(244, 242, 234, .04); }
+  .ch-princ b { display: block; margin-bottom: 6px; color: #fff; font: 700 19px/1.3 var(--display); font-stretch: 112%; }
+  .ch-princ span { color: var(--gris-n); font-size: 15.5px; }
+  .ch-wrap { display: grid; grid-template-columns: 220px 1fr; gap: 56px; padding: 0 var(--gutter); }
+  .ch-toc { position: sticky; top: 96px; align-self: start; margin-top: 96px; display: grid; gap: 4px; }
+  .ch-toc a { padding: 7px 12px; border-radius: 9px; color: var(--gris); text-decoration: none; font: 500 12.5px/1.3 var(--mono); letter-spacing: .08em; text-transform: uppercase; }
+  .ch-toc a:hover { background: rgba(11, 21, 19, .06); color: var(--encre); }
+  .ch-sec { padding: 96px 0 24px; border-bottom: 1px solid var(--trait); }
+  .ch-sec:last-child { border-bottom: 0; padding-bottom: 120px; }
+  .ch-sec > h2 { margin: 18px 0 14px; font-size: clamp(30px, 3.6vw, 46px); font-weight: 800; letter-spacing: -.025em; line-height: 1.05; }
+  .ch-sec > .sub { margin-bottom: 36px; }
+  .ch-label { display: flex; align-items: center; gap: 14px; margin: 0; color: var(--gazon-f); font: 500 13px/1 var(--mono); letter-spacing: .16em; text-transform: uppercase; }
+  .ch-grid { display: grid; gap: 16px; }
+  .g2 { grid-template-columns: repeat(2, 1fr); } .g3 { grid-template-columns: repeat(3, 1fr); } .g4 { grid-template-columns: repeat(4, 1fr); }
+  .tile { border: 1px solid var(--trait); border-radius: 18px; overflow: hidden; background: var(--craie-2); }
+  .tile-v { display: grid; place-items: center; min-height: 190px; padding: 28px; }
+  .tile-v.n { background: var(--nuit); }
+  .tile-c { padding: 14px 18px; border-top: 1px solid var(--trait); font-size: 14.5px; color: var(--gris); }
+  .tile-c b { color: var(--encre); }
+  .do-dont { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; margin-top: 16px; }
+  .dd { border: 1px solid var(--trait); border-radius: 16px; background: var(--craie-2); overflow: hidden; }
+  .dd .tile-v { min-height: 120px; padding: 18px; }
+  .dd p { margin: 0; padding: 12px 16px; border-top: 1px solid var(--trait); font-size: 14px; color: var(--gris); }
+  .dd p::before { content: "✕  "; color: #C0392B; font-weight: 700; }
+  .zone { position: relative; display: inline-block; padding: 26px; outline: 1px dashed rgba(42, 80, 208, .5); }
+  .zone::before { content: ""; position: absolute; inset: 26px; outline: 1px solid rgba(42, 80, 208, .25); }
+  .sw { border-radius: 18px; overflow: hidden; border: 1px solid var(--trait); background: var(--craie-2); }
+  .sw-c { height: 120px; display: flex; align-items: flex-end; padding: 14px 16px; font: 600 12px/1 var(--mono); letter-spacing: .08em; }
+  .sw-i { padding: 14px 16px; }
+  .sw-i b { display: block; font: 800 18px/1.2 var(--display); font-stretch: 112%; color: var(--encre); }
+  .sw-i code { display: block; margin: 6px 0 8px; font: 500 13px/1.4 var(--mono); color: var(--gris); }
+  .sw-i span { font-size: 14px; color: var(--gris); }
+  .prop { display: flex; height: 18px; border-radius: 9px; overflow: hidden; margin: 22px 0 8px; }
+  .prop i { display: block; }
+  .prop-l { display: flex; justify-content: space-between; font: 500 12px/1.4 var(--mono); color: var(--gris); }
+  table.ct { width: 100%; border-collapse: collapse; margin-top: 26px; font-size: 14.5px; background: var(--craie-2); border: 1px solid var(--trait); border-radius: 16px; overflow: hidden; }
+  table.ct th, table.ct td { padding: 11px 14px; text-align: start; border-top: 1px solid var(--trait); }
+  table.ct th { font: 500 11.5px/1.3 var(--mono); letter-spacing: .1em; text-transform: uppercase; color: var(--gris); background: rgba(220, 216, 204, .25); border-top: 0; }
+  .ok { color: var(--gazon-f); font-weight: 600; } .ko { color: #B03A2E; font-weight: 600; }
+  .ty { padding: 26px 28px; border: 1px solid var(--trait); border-radius: 18px; background: var(--craie-2); }
+  .ty + .ty { margin-top: 16px; }
+  .ty-h { display: flex; justify-content: space-between; gap: 12px; flex-wrap: wrap; font: 500 12px/1.4 var(--mono); letter-spacing: .1em; text-transform: uppercase; color: var(--gris); }
+  .ty-s { margin-top: 14px; color: var(--encre); }
+  .scale { display: grid; gap: 0; border: 1px solid var(--trait); border-radius: 18px; overflow: hidden; background: var(--craie-2); margin-top: 16px; }
+  .scale div { display: grid; grid-template-columns: 170px 1fr; gap: 18px; align-items: baseline; padding: 16px 22px; border-top: 1px solid var(--trait); }
+  .scale div:first-child { border-top: 0; }
+  .scale code { font: 500 12px/1.4 var(--mono); color: var(--gris); }
+  .motif { position: relative; min-height: 220px; border-radius: 18px; overflow: hidden; background: var(--nuit); isolation: isolate; }
+  .motif-c { padding: 14px 18px; background: var(--craie-2); border: 1px solid var(--trait); border-top: 0; border-radius: 0 0 18px 18px; font-size: 14.5px; color: var(--gris); }
+  .motif-c b { color: var(--encre); }
+  .m-wrap .motif { border-radius: 18px 18px 0 0; }
+  .comp { display: flex; flex-wrap: wrap; gap: 12px; align-items: center; padding: 26px; border-radius: 18px; border: 1px solid var(--trait); background: var(--craie-2); }
+  .comp.n { background: var(--nuit); border-color: var(--nuit); }
+  .prod { padding: 28px; border-radius: 22px; color: var(--texte-n); background: var(--nuit); position: relative; overflow: hidden; }
+  .prod::before { content: ""; position: absolute; inset: 0 28px auto; height: 2px; background: var(--c); }
+  .prod h3 { margin: 14px 0 8px; color: #fff; font-size: 28px; font-weight: 800; letter-spacing: -.02em; }
+  .prod p { margin: 0; color: var(--gris-n); }
+  .prod ul { margin: 16px 0 0; padding-inline-start: 18px; color: var(--texte-n); font-size: 15px; }
+  .ecr { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+  .ecr div { padding: 20px 22px; border-radius: 16px; border: 1px solid var(--trait); background: var(--craie-2); font-size: 15.5px; }
+  .ecr .oui { border-color: rgba(11, 127, 83, .35); }
+  .ecr .non { border-color: rgba(176, 58, 46, .3); }
+  .ecr h4 { margin: 0 0 8px; font: 500 12px/1.3 var(--mono); letter-spacing: .12em; text-transform: uppercase; }
+  .ecr .oui h4 { color: var(--gazon-f); } .ecr .non h4 { color: #B03A2E; }
+  .ecr ul { margin: 0; padding-inline-start: 18px; color: var(--texte); }
+  .dl { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; }
+  .dl a { display: flex; align-items: center; gap: 14px; padding: 14px 16px; border: 1px solid var(--trait); border-radius: 14px; background: var(--craie-2); text-decoration: none; color: var(--encre); transition: border-color .2s, transform .2s; }
+  .dl a:hover { border-color: var(--encre); transform: translateY(-2px); }
+  .dl .pv { width: 64px; height: 44px; flex: none; display: grid; place-items: center; border-radius: 9px; background: var(--craie); }
+  .dl .pv.n { background: var(--nuit); }
+  .dl .pv img { max-width: 52px; max-height: 32px; }
+  .dl b { display: block; font-size: 14.5px; }
+  .dl small { font: 500 11.5px/1.3 var(--mono); color: var(--gris); letter-spacing: .06em; }
+  @media (max-width: 1020px) {
+    .ch-wrap { grid-template-columns: 1fr; gap: 0; }
+    .ch-toc { display: none; }
+    .g3, .g4, .do-dont, .dl, .ch-princ { grid-template-columns: 1fr 1fr; }
+  }
+  @media (max-width: 560px) {
+    .g2, .g3, .g4, .do-dont, .dl, .ch-princ, .ecr { grid-template-columns: 1fr; }
+    .scale div { grid-template-columns: 1fr; gap: 4px; }
+    .ch-sec { padding-top: 72px; }
+  }
+</style>
+</head>
+<body>
+
+<header class="ch-cover dark">
+  <div class="hero-fx" aria-hidden="true">
+    <span class="beam beam-l"></span><span class="beam beam-r"></span>
+    <svg class="hero-pitch" viewBox="-20 -20 1090 720"><g fill="none" stroke="currentColor" stroke-width="2.4">
+      <rect x="0" y="0" width="1050" height="680"/><path d="M525 0v680"/><circle cx="525" cy="340" r="91.5"/>
+      <rect x="0" y="138.5" width="165" height="403"/><rect x="0" y="248.5" width="55" height="183"/><path d="M165 267a91.5 91.5 0 0 1 0 146"/>
+      <rect x="885" y="138.5" width="165" height="403"/><rect x="995" y="248.5" width="55" height="183"/><path d="M885 267a91.5 91.5 0 0 0 0 146"/>
+    </g></svg>
+    <span class="grain"></span>
+  </div>
+  <img class="ch-logo" src="../assets/brand/logo-craie.svg?v=5" alt="Marmastats" width="520" height="77">
+  <h1>Charte graphique<br><em>Sous les projecteurs.</em></h1>
+  <p class="ch-ver">Version 1 · octobre 2026 · référence interne</p>
+  <div class="ch-princ">
+    <div><b>Le match de nuit</b><span>Un fond sombre, la lumière sur ce qui compte. Le jaune du ballon est la seule couleur qui crie, et elle se fait rare.</span></div>
+    <div><b>Le terrain comme langage</b><span>Lignes de craie, cadres de suivi des joueurs, schéma de passes : nos dessins viennent du terrain, pas d'une banque d'images.</span></div>
+    <div><b>Clair d'abord</b><span>La conclusion avant la méthode, des mots simples, trois langues dont l'arabe de droite à gauche. Le design sert la lecture.</span></div>
+  </div>
+</header>
+
+<div class="ch-wrap">
+  <nav class="ch-toc" aria-label="Sommaire">
+    <a href="#logo">01 · Le logo</a>
+    <a href="#couleurs">02 · Les couleurs</a>
+    <a href="#typo">03 · Les typographies</a>
+    <a href="#motifs">04 · Les motifs</a>
+    <a href="#composants">05 · Les composants</a>
+    <a href="#produits">06 · Les deux produits</a>
+    <a href="#ecrire">07 · Écrire</a>
+    <a href="#fichiers">08 · Les fichiers</a>
+  </nav>
+
+  <main>
+    <!-- 01 LOGO -->
+    <section class="ch-sec" id="logo">
+      <p class="ch-label"><span>01</span><span class="part-rule"></span><span>Le logo</span></p>
+      <h2>Un M dessiné comme un schéma de passes.</h2>
+      <p class="sub">Quatre joueurs reliés par leurs passes forment le M ; le ballon, en jaune, est au centre du jeu. Le mot est en Archivo semi-large, graisse 700, vectorisé : il s'affiche pareil partout, sans police installée.</p>
+      <div class="ch-grid g2">
+        <div class="tile"><div class="tile-v"><img src="../assets/brand/logo-nuit.svg?v=5" alt="Logo sur fond craie" width="340" height="50"></div><div class="tile-c"><b>Sur fond clair</b> · logo-nuit</div></div>
+        <div class="tile"><div class="tile-v n"><img src="../assets/brand/logo-craie.svg?v=5" alt="Logo sur fond nuit" width="340" height="50"></div><div class="tile-c"><b>Sur fond sombre</b> · logo-craie</div></div>
+      </div>
+      <div class="ch-grid g3" style="margin-top:16px">
+        <div class="tile"><div class="tile-v"><img src="../assets/brand/symbole-nuit.svg?v=5" alt="Symbole seul" width="96" height="96"></div><div class="tile-c"><b>Symbole seul</b> · quand la place manque (avatar, tampon).</div></div>
+        <div class="tile"><div class="tile-v"><img src="../assets/brand/icone.svg?v=5" alt="Icône d'application" width="110" height="110"></div><div class="tile-c"><b>Icône</b> · onglet du navigateur, application, réseaux.</div></div>
+        <div class="tile"><div class="tile-v"><span class="zone"><img src="../assets/brand/logo-nuit.svg?v=5" alt="" width="220" height="32"></span></div><div class="tile-c"><b>Zone de protection</b> · autour du logo, un vide au moins égal à la hauteur du symbole. Taille minimale : 100 px de large (logo), 16 px (symbole).</div></div>
+      </div>
+      <div class="do-dont">
+        <div class="dd"><div class="tile-v"><img src="../assets/brand/logo-nuit.svg?v=5" alt="" width="140" height="21" style="transform:scale(1.3,.8)"></div><p>Le déformer</p></div>
+        <div class="dd"><div class="tile-v"><img src="../assets/brand/logo-nuit.svg?v=5" alt="" width="180" height="27" style="filter:hue-rotate(180deg) saturate(3)"></div><p>Changer ses couleurs</p></div>
+        <div class="dd"><div class="tile-v" style="background:linear-gradient(135deg,#7a8f2e,#d35400)"><img src="../assets/brand/logo-nuit.svg?v=5" alt="" width="180" height="27"></div><p>Le poser sur un fond chargé</p></div>
+        <div class="dd"><div class="tile-v"><img src="../assets/brand/logo-nuit.svg?v=5" alt="" width="180" height="27" style="filter:drop-shadow(4px 4px 3px rgba(0,0,0,.6))"></div><p>Lui ajouter une ombre ou un effet</p></div>
+      </div>
+    </section>
+
+    <!-- 02 COULEURS -->
+    <section class="ch-sec" id="couleurs">
+      <p class="ch-label"><span>02</span><span class="part-rule"></span><span>Les couleurs</span></p>
+      <h2>La nuit, la craie, et le ballon.</h2>
+      <p class="sub">Deux fonds qui alternent (nuit et craie), un seul accent (le ballon), et deux couleurs réservées chacune à un produit. Chaque couleur produit existe en version vive, pour le fond nuit, et en version foncée, pour le fond craie.</p>
+      <div class="ch-grid g3">
+        <div class="sw"><div class="sw-c" style="background:#0B1513;color:#F4F2EA">FOND SOMBRE</div><div class="sw-i"><b>Nuit</b><code>#0B1513 · rgb 11 21 19</code><span>Haut de page, parties sombres, textes sur craie.</span></div></div>
+        <div class="sw"><div class="sw-c" style="background:#F4F2EA;color:#0B1513;border-bottom:1px solid var(--trait)">FOND CLAIR</div><div class="sw-i"><b>Craie</b><code>#F4F2EA · rgb 244 242 234</code><span>Fond clair chaud, jamais le blanc pur. Cartes : #FBFAF6.</span></div></div>
+        <div class="sw"><div class="sw-c" style="background:#FFC93C;color:#0B1513">ACCENT · RARE</div><div class="sw-i"><b>Ballon</b><code>#FFC93C · rgb 255 201 60</code><span>Le bouton principal sur nuit, le ballon, le joueur suivi, la phrase qui accroche. Jamais en texte sur craie.</span></div></div>
+      </div>
+      <div class="ch-grid g4" style="margin-top:16px">
+        <div class="sw"><div class="sw-c" style="background:#3DDC97;color:#0B1513">KORA · VIF</div><div class="sw-i"><b>Gazon</b><code>#3DDC97</code><span>Kora sur fond nuit.</span></div></div>
+        <div class="sw"><div class="sw-c" style="background:#0B7F53;color:#fff">KORA · FONCÉ</div><div class="sw-i"><b>Gazon foncé</b><code>#0B7F53</code><span>Kora sur fond craie, ses boutons.</span></div></div>
+        <div class="sw"><div class="sw-c" style="background:#7C9CFF;color:#0B1513">PLATEFORME · VIF</div><div class="sw-i"><b>Bleu</b><code>#7C9CFF</code><span>La plateforme sur fond nuit.</span></div></div>
+        <div class="sw"><div class="sw-c" style="background:#2A50D0;color:#fff">PLATEFORME · FONCÉ</div><div class="sw-i"><b>Bleu foncé</b><code>#2A50D0</code><span>La plateforme sur craie, ses boutons.</span></div></div>
+      </div>
+      <div class="ch-grid g4" style="margin-top:16px">
+        <div class="sw"><div class="sw-c" style="background:#2A3330;color:#fff">TEXTE</div><div class="sw-i"><b>Encre</b><code>#2A3330</code><span>Le texte courant sur craie.</span></div></div>
+        <div class="sw"><div class="sw-c" style="background:#5A6460;color:#fff">SECONDAIRE</div><div class="sw-i"><b>Gris</b><code>#5A6460</code><span>Sous-titres, légendes sur craie.</span></div></div>
+        <div class="sw"><div class="sw-c" style="background:#A3ADA8;color:#0B1513">SECONDAIRE · NUIT</div><div class="sw-i"><b>Gris clair</b><code>#A3ADA8</code><span>Sous-titres sur fond nuit.</span></div></div>
+        <div class="sw"><div class="sw-c" style="background:#DCD8CC;color:#0B1513">TRAITS</div><div class="sw-i"><b>Trait</b><code>#DCD8CC</code><span>Bordures et séparations sur craie.</span></div></div>
+      </div>
+      <div class="prop" aria-hidden="true"><i style="flex:45;background:#0B1513"></i><i style="flex:35;background:#F4F2EA;border-block:1px solid var(--trait)"></i><i style="flex:9;background:#5A6460"></i><i style="flex:4;background:#0B7F53"></i><i style="flex:4;background:#2A50D0"></i><i style="flex:3;background:#FFC93C"></i></div>
+      <div class="prop-l"><span>Nuit et craie : 80 % de la surface</span><span>Produits : 8 %</span><span>Ballon : 3 % au plus</span></div>
+      <table class="ct">
+        <thead><tr><th>Couleur du texte</th><th>Sur fond</th><th>Contraste</th><th>Usage</th></tr></thead>
+        <tbody>
+          <tr><td>Craie</td><td>Nuit</td><td>16,6 : 1</td><td class="ok">Tous les textes</td></tr>
+          <tr><td>Ballon</td><td>Nuit</td><td>12,1 : 1</td><td class="ok">Titres, boutons (texte nuit sur ballon : 12,1)</td></tr>
+          <tr><td>Gazon vif · Bleu vif</td><td>Nuit</td><td>10,5 · 7,1 : 1</td><td class="ok">Étiquettes, liens</td></tr>
+          <tr><td>Encre · Gris</td><td>Craie</td><td>11,6 · 5,5 : 1</td><td class="ok">Texte courant, légendes</td></tr>
+          <tr><td>Gazon foncé · Bleu foncé</td><td>Craie</td><td>4,5 · 5,9 : 1</td><td class="ok">Étiquettes, titres de colonne</td></tr>
+          <tr><td>Ballon</td><td>Craie</td><td>1,4 : 1</td><td class="ko">Interdit en texte</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- 03 TYPO -->
+    <section class="ch-sec" id="typo">
+      <p class="ch-label"><span>03</span><span class="part-rule"></span><span>Les typographies</span></p>
+      <h2>Une voix de retransmission, lisible en trois langues.</h2>
+      <p class="sub">Quatre familles libres (licence OFL, Google Fonts), chacune avec un rôle. Les titres latins sont en Archivo élargi à 112 % : l'allure des habillages de match à la télévision.</p>
+      <div class="ty"><div class="ty-h"><span>Archivo · titres · 800 · largeur 112 %</span><span>Latin</span></div><div class="ty-s" style="font:800 56px/1.02 Archivo,sans-serif;font-stretch:112%;letter-spacing:-.025em">Qui les lit vraiment ?</div></div>
+      <div class="ty"><div class="ty-h"><span>Archivo · texte · 400 et 600 · largeur 100 %</span><span>Latin</span></div><div class="ty-s" style="font:400 19px/1.6 Archivo,sans-serif;max-width:46em">Kora regarde l'enregistrement, suit chaque joueur, et vous pose la question quand il a un doute. <b style="font-weight:600">Le texte reste droit et sobre</b> : la largeur ne sert qu'aux titres.</div></div>
+      <div class="ty"><div class="ty-h"><span>IBM Plex Mono · étiquettes · 500 · capitales espacées de 0,14 em</span><span>Latin</span></div><div class="ty-s" style="font:500 15px/1.6 'IBM Plex Mono',monospace;letter-spacing:.14em;text-transform:uppercase">01 — Analyse vidéo · Suivi en direct · 71:32</div></div>
+      <div class="ty" dir="rtl" lang="ar"><div class="ty-h"><span>Alexandria · العناوين · 800</span><span>عربي</span></div><div class="ty-s" style="font:800 48px/1.25 Alexandria,sans-serif">فمن يقرؤها فعلًا؟</div></div>
+      <div class="ty" dir="rtl" lang="ar"><div class="ty-h"><span>IBM Plex Sans Arabic · النص · 400 و 600</span><span>عربي</span></div><div class="ty-s" style="font:400 19px/1.7 'IBM Plex Sans Arabic',sans-serif">يشاهد كورة التسجيل، ويتتبّع كل لاعب، ويسألك عندما يشكّ. في العربية لا نُباعد بين الحروف ولا نستخدم الأحرف الكبيرة.</div></div>
+      <div class="scale">
+        <div><code>Titre 1 · 76 / 1,02</code><span style="font:800 40px/1.05 Archivo,sans-serif;font-stretch:112%;letter-spacing:-.025em;color:var(--encre)">Haut de page</span></div>
+        <div><code>Titre 2 · 58 / 1,04</code><span style="font:800 30px/1.1 Archivo,sans-serif;font-stretch:112%;letter-spacing:-.02em;color:var(--encre)">Titre de partie</span></div>
+        <div><code>Titre 3 · 20 à 28</code><span style="font:700 22px/1.25 Archivo,sans-serif;font-stretch:112%;color:var(--encre)">Titre de carte</span></div>
+        <div><code>Texte · 17 / 1,6</code><span style="font:400 17px/1.6 Archivo,sans-serif">Le texte courant, en phrases courtes.</span></div>
+        <div><code>Étiquette · 12,5 mono</code><span style="font:500 12.5px/1.4 'IBM Plex Mono',monospace;letter-spacing:.14em;text-transform:uppercase;color:var(--gris)">Vous envoyez</span></div>
+      </div>
+    </section>
+
+    <!-- 04 MOTIFS -->
+    <section class="ch-sec" id="motifs">
+      <p class="ch-label"><span>04</span><span class="part-rule"></span><span>Les motifs</span></p>
+      <h2>Tout vient du terrain.</h2>
+      <p class="sub">Quatre motifs, à utiliser avec retenue : un ou deux par écran. Ils remplacent les photos d'illustration, que nous n'utilisons pas (sauf les visuels fournis par un club, avec son accord).</p>
+      <div class="ch-grid g2">
+        <div class="m-wrap"><div class="motif"><svg viewBox="-20 -20 1090 720" style="position:absolute;left:50%;bottom:-4%;width:118%;color:rgba(244,242,234,.4);transform:translateX(-50%) perspective(600px) rotateX(52deg);transform-origin:50% 100%"><g fill="none" stroke="currentColor" stroke-width="3"><rect x="0" y="0" width="1050" height="680"/><path d="M525 0v680"/><circle cx="525" cy="340" r="91.5"/><rect x="0" y="138.5" width="165" height="403"/><rect x="885" y="138.5" width="165" height="403"/></g></svg></div><div class="motif-c"><b>Lignes de craie</b> · le terrain tracé en traits fins, en perspective sous le haut de page, ou à plat comme fond discret. Craie à 10-20 % sur nuit.</div></div>
+        <div class="m-wrap"><div class="motif" style="display:grid;place-items:center"><div class="brk" style="width:62%;height:62%;border-radius:12px;background:#10261D"></div></div><div class="motif-c"><b>Cadres de suivi</b> · quatre coins, comme autour d'un joueur suivi par la vidéo. Autour d'une image, d'une capture, d'un chiffre important. Jaune sur nuit, couleur du produit sinon.</div></div>
+        <div class="m-wrap"><div class="motif"><svg viewBox="0 0 400 220" style="position:absolute;inset:0;width:100%;height:100%"><g stroke="rgba(61,220,151,.55)" stroke-width="2" fill="none"><path d="M60 170 140 110 230 140 300 70 350 120M140 110 180 50 300 70M230 140 300 70"/></g><g fill="#3DDC97"><circle cx="60" cy="170" r="7"/><circle cx="140" cy="110" r="7"/><circle cx="230" cy="140" r="7"/><circle cx="300" cy="70" r="7"/><circle cx="350" cy="120" r="7"/><circle cx="180" cy="50" r="7"/></g><circle cx="300" cy="70" r="9" fill="#FFC93C" stroke="#0B1513" stroke-width="3"/></svg></div><div class="motif-c"><b>Schéma de passes</b> · des points reliés : le logo en vient. Pour illustrer une idée de jeu, un lien entre deux choses, une étape.</div></div>
+        <div class="m-wrap"><div class="motif"><span class="beam beam-l"></span><span class="beam beam-r"></span><span style="position:absolute;inset:0;background:radial-gradient(260px 160px at 4% -4%, rgba(255,236,190,.28), transparent 70%),radial-gradient(260px 160px at 96% -4%, rgba(255,236,190,.28), transparent 70%)"></span><span class="grain"></span></div><div class="motif-c"><b>Halos de projecteur et grain</b> · une lumière chaude qui tombe des coins hauts, un grain très léger. Seulement sur les grands fonds nuit (haut de page, contact).</div></div>
+      </div>
+    </section>
+
+    <!-- 05 COMPOSANTS -->
+    <section class="ch-sec" id="composants">
+      <p class="ch-label"><span>05</span><span class="part-rule"></span><span>Les composants</span></p>
+      <h2>Boutons, pastilles, cartes.</h2>
+      <p class="sub">Un seul bouton jaune par écran, pour l'action principale. Les boutons d'un produit prennent sa couleur. Une pastille dit toujours un état vrai : on n'écrit pas « pris en charge » pour ce qu'on ne sait pas encore lire.</p>
+      <div class="comp n dark">
+        <a class="btn btn-ballon" href="#composants">Demander une démo</a>
+        <a class="btn btn-ghost" href="#composants">Voir la démo</a>
+        <span class="status live">Pris en charge</span><span class="status beta">Bêta</span><span class="status next">Sur demande</span>
+      </div>
+      <div class="comp" style="margin-top:16px">
+        <a class="btn" href="#composants">Action sur craie</a>
+        <a class="btn btn-video" href="#composants">Bouton Kora</a>
+        <a class="btn btn-data" href="#composants">Bouton Plateforme</a>
+        <a class="btn btn-ghost" href="#composants">Secondaire</a>
+        <span class="status live">Pris en charge</span><span class="status beta">Bêta</span><span class="status next">Sur demande</span>
+      </div>
+      <div class="ch-grid g3" style="margin-top:16px">
+        <div class="tile"><div class="tile-v n" style="color:var(--texte-n);text-align:start;place-items:stretch"><div><span style="font:500 12px/1 var(--mono);letter-spacing:.1em;color:var(--gris-n)">LIGNE DÉFENSIVE</span><div style="font:800 40px/1.2 Archivo,sans-serif;font-stretch:112%;color:var(--ballon)">31 m</div></div></div><div class="tile-c"><b>Chiffre clé</b> · étiquette en mono, valeur en Archivo élargi. Le jaune seulement pour LE chiffre à retenir.</div></div>
+        <div class="tile"><div class="tile-v" style="text-align:start;place-items:stretch"><div><span style="font:500 12px/1 var(--mono);letter-spacing:.14em;color:var(--gazon-f)">01 —— ANALYSE VIDÉO</span><div style="margin-top:10px;font:800 26px/1.1 Archivo,sans-serif;font-stretch:112%;color:var(--encre)">Titre de partie</div></div></div><div class="tile-c"><b>Ouverture de partie</b> · numéro, trait, nom en mono, puis le titre.</div></div>
+        <div class="tile"><div class="tile-v n"><div class="brk" style="width:100%;height:120px;border-radius:12px;background:var(--craie)"></div></div><div class="tile-c"><b>Capture encadrée</b> · une capture du produit sur fond nuit, cadre de suivi autour, halo de la couleur du produit dessous.</div></div>
+      </div>
+    </section>
+
+    <!-- 06 PRODUITS -->
+    <section class="ch-sec" id="produits">
+      <p class="ch-label"><span>06</span><span class="part-rule"></span><span>Les deux produits</span></p>
+      <h2>Une marque, deux portes.</h2>
+      <p class="sub">Marmastats est la marque. Chaque produit a sa couleur, qui ne sert qu'à lui : un vert qui parlerait de la plateforme brouillerait le message.</p>
+      <div class="ch-grid g2">
+        <div class="prod" style="--c:var(--gazon)"><span class="status live" style="color:var(--gazon);background:rgba(61,220,151,.12)">Analyse vidéo</span><h3>Kora</h3><p>De la vidéo du match au rapport tactique. Pour les clubs qui filment, sans analyste ni fournisseur de données.</p><ul><li>Couleur : gazon (#3DDC97 sur nuit, #0B7F53 sur craie)</li><li>Icône : la caméra</li><li>Image : le terrain de nuit, joueurs suivis</li></ul></div>
+        <div class="prod" style="--c:var(--bleu)"><span class="status live" style="color:var(--bleu);background:rgba(124,156,255,.14)">Données fournisseur</span><h3>La plateforme</h3><p>Les fichiers du fournisseur (InStat, gilets GPS Catapult) deviennent le site privé du club.</p><ul><li>Couleur : bleu (#7C9CFF sur nuit, #2A50D0 sur craie)</li><li>Icône : les barres</li><li>Image : les vraies captures de la démo</li></ul></div>
+      </div>
+    </section>
+
+    <!-- 07 ECRIRE -->
+    <section class="ch-sec" id="ecrire">
+      <p class="ch-label"><span>07</span><span class="part-rule"></span><span>Écrire</span></p>
+      <h2>Parler comme un entraîneur, pas comme un logiciel.</h2>
+      <p class="sub">Le design ne rattrape pas un texte flou. La même règle que sur le site du club : la conclusion d'abord, la méthode en dessous.</p>
+      <div class="ecr">
+        <div class="oui"><h4>On écrit</h4><ul><li>« Vos matchs sont filmés. Qui les lit vraiment ? »</li><li>Des chiffres qu'on peut vérifier, avec leur source.</li><li>« Sur demande » pour ce qu'on ne sait pas encore faire.</li><li>Les noms des fournisseurs en texte, avec la mention des marques.</li><li>Trois langues, l'arabe en vrai droite-à-gauche.</li></ul></div>
+        <div class="non"><h4>On n'écrit pas</h4><ul><li>« Solution IA révolutionnaire de nouvelle génération ».</li><li>Un chiffre sans source, un « leader du marché ».</li><li>Les logos d'Opta, Wyscout, StatsBomb ou Hudl (on n'est pas leur partenaire).</li><li>Le nom d'un club sans son accord écrit.</li><li>Du jargon (« KPI », « insights ») là où un mot simple existe.</li></ul></div>
+      </div>
+    </section>
+
+    <!-- 08 FICHIERS -->
+    <section class="ch-sec" id="fichiers">
+      <p class="ch-label"><span>08</span><span class="part-rule"></span><span>Les fichiers</span></p>
+      <h2>À télécharger.</h2>
+      <p class="sub">SVG pour le web et l'impression (net à toutes les tailles), PNG transparents pour Word, PowerPoint et les réseaux.</p>
+      <div class="dl">
+        <a href="../assets/brand/logo-nuit.svg" download><span class="pv"><img src="../assets/brand/logo-nuit.svg?v=5" alt=""></span><span><b>Logo, fond clair</b><small>SVG</small></span></a>
+        <a href="../assets/brand/logo-nuit.png" download><span class="pv"><img src="../assets/brand/logo-nuit.svg?v=5" alt=""></span><span><b>Logo, fond clair</b><small>PNG · 1600 px</small></span></a>
+        <a href="../assets/brand/logo-craie.svg" download><span class="pv n"><img src="../assets/brand/logo-craie.svg?v=5" alt=""></span><span><b>Logo, fond sombre</b><small>SVG</small></span></a>
+        <a href="../assets/brand/logo-craie.png" download><span class="pv n"><img src="../assets/brand/logo-craie.svg?v=5" alt=""></span><span><b>Logo, fond sombre</b><small>PNG · 1600 px</small></span></a>
+        <a href="../assets/brand/symbole-nuit.svg" download><span class="pv"><img src="../assets/brand/symbole-nuit.svg?v=5" alt=""></span><span><b>Symbole, fond clair</b><small>SVG</small></span></a>
+        <a href="../assets/brand/symbole-nuit.png" download><span class="pv"><img src="../assets/brand/symbole-nuit.svg?v=5" alt=""></span><span><b>Symbole, fond clair</b><small>PNG · 512 px</small></span></a>
+        <a href="../assets/brand/symbole-craie.svg" download><span class="pv n"><img src="../assets/brand/symbole-craie.svg?v=5" alt=""></span><span><b>Symbole, fond sombre</b><small>SVG</small></span></a>
+        <a href="../assets/brand/symbole-craie.png" download><span class="pv n"><img src="../assets/brand/symbole-craie.svg?v=5" alt=""></span><span><b>Symbole, fond sombre</b><small>PNG · 512 px</small></span></a>
+        <a href="../assets/brand/icone.svg" download><span class="pv"><img src="../assets/brand/icone.svg?v=5" alt=""></span><span><b>Icône</b><small>SVG</small></span></a>
+        <a href="../assets/brand/icone-512.png" download><span class="pv"><img src="../assets/brand/icone.svg?v=5" alt=""></span><span><b>Icône</b><small>PNG · 512 px</small></span></a>
+        <a href="https://fonts.google.com/specimen/Archivo" target="_blank" rel="noopener"><span class="pv"><b style="font:800 18px/1 Archivo,sans-serif;font-stretch:112%">Aa</b></span><span><b>Les polices</b><small>Archivo · Plex · Alexandria</small></span></a>
+      </div>
+    </section>
+  </main>
+</div>
+
+<footer class="foot dark">
+  <img src="../assets/brand/logo-craie.svg?v=5" alt="Marmastats" width="163" height="24">
+  <span class="foot-links"><a href="../">marmastats.com</a><span>Charte graphique · version 1 · octobre 2026</span></span>
+</footer>
+</body>
+</html>

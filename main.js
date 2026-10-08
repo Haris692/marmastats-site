@@ -166,26 +166,26 @@
     // players
     const dot = (x, y, c) => { g.beginPath(); g.arc(x, y, 4.2 * clipDpr, 0, 7); g.fillStyle = c; g.shadowColor = c; g.shadowBlur = 10 * clipDpr; g.fill(); g.shadowBlur = 0; };
     const shooterX = 62 + 10 * Math.min(k / 0.35, 1);
-    dot(shooterX * u, H * 0.56, "#34d399");
-    dot(55 * u, H * 0.3, "#34d399");
-    dot(80 * u, H * (0.45 + 0.05 * Math.sin(k * 6)), "#a78bfa");
-    dot(84 * u, H * 0.62, "#a78bfa");
+    dot(shooterX * u, H * 0.56, "#3DDC97");
+    dot(55 * u, H * 0.3, "#3DDC97");
+    dot(80 * u, H * (0.45 + 0.05 * Math.sin(k * 6)), "#E9E6DC");
+    dot(84 * u, H * 0.62, "#E9E6DC");
     const gkY = 0.5 - 0.12 * Math.max(0, Math.min((k - 0.38) / 0.2, 1));
-    dot(96 * u, H * gkY, "#fbbf24");
+    dot(96 * u, H * gkY, "#B9C4BF");
     // ball
     let bx, by;
     if (k < 0.35) { bx = shooterX + 1.2; by = 0.57; }
     else if (k < 0.62) { const s = (k - 0.35) / 0.27; bx = 73 + 25.5 * s; by = 0.57 - 0.12 * s - 0.08 * Math.sin(s * Math.PI); }
     else { bx = 98.5; by = 0.45; }
-    g.beginPath(); g.arc(bx * u, H * by, 3 * clipDpr, 0, 7); g.fillStyle = "#fff"; g.shadowColor = "#fff"; g.shadowBlur = 12 * clipDpr; g.fill(); g.shadowBlur = 0;
+    g.beginPath(); g.arc(bx * u, H * by, 3 * clipDpr, 0, 7); g.fillStyle = "#FFC93C"; g.shadowColor = "#FFC93C"; g.shadowBlur = 12 * clipDpr; g.fill(); g.shadowBlur = 0;
     // net ripple
     if (k > 0.62 && k < 0.85) {
       const a = 1 - (k - 0.62) / 0.23;
-      g.strokeStyle = `rgba(52,211,153,${a})`; g.lineWidth = 2 * clipDpr;
+      g.strokeStyle = `rgba(61,220,151,${a})`; g.lineWidth = 2 * clipDpr;
       g.beginPath(); g.arc(98.5 * u, H * 0.45, (1 - a) * 22 * clipDpr + 4, 0, 7); g.stroke();
     }
     // scanline sweep
-    g.fillStyle = "rgba(34,211,238,.05)";
+    g.fillStyle = "rgba(255,240,205,.04)";
     g.fillRect(0, ((ms / 12) % (H + 40)) - 40, W, 40);
   }
 
@@ -202,8 +202,8 @@
   const F442 = [[4, 34], [20, 10], [17, 26], [17, 42], [20, 58], [38, 8], [34, 26], [34, 42], [38, 60], [52, 27], [54, 41]];
   const F433 = [[4, 34], [20, 9], [17, 26], [17, 42], [20, 59], [34, 22], [32, 34], [34, 46], [52, 10], [55, 34], [52, 58]];
   const teams = [
-    { name: "green", color: "#34d399", dir: 1, shape: F442, players: [] },
-    { name: "violet", color: "#a78bfa", dir: -1, shape: F433, players: [] }
+    { name: "green", color: "#3DDC97", dir: 1, shape: F442, players: [] },
+    { name: "violet", color: "#E9E6DC", dir: -1, shape: F433, players: [] }
   ];
   const nums = [1, 2, 4, 5, 3, 7, 6, 8, 11, 9, 10];
   teams.forEach((tm, ti) => tm.shape.forEach(([x, y], i) => {
@@ -382,17 +382,17 @@
     teams.forEach((tm, ti) => {
       const h = hull(tm.players.slice(1).map((p) => ({ x: X(p.x), y: Y(p.y) })));
       g.beginPath(); h.forEach((q, i) => (i ? g.lineTo(q.x, q.y) : g.moveTo(q.x, q.y))); g.closePath();
-      g.fillStyle = ti === 0 ? "rgba(52,211,153,.10)" : "rgba(167,139,250,.07)";
+      g.fillStyle = ti === 0 ? "rgba(61,220,151,.10)" : "rgba(233,230,220,.05)";
       g.fill();
       g.setLineDash([5 * dpr, 5 * dpr]);
-      g.strokeStyle = ti === 0 ? "rgba(52,211,153,.55)" : "rgba(167,139,250,.35)";
+      g.strokeStyle = ti === 0 ? "rgba(61,220,151,.55)" : "rgba(233,230,220,.3)";
       g.lineWidth = 1.2 * dpr; g.stroke(); g.setLineDash([]);
     });
 
     // green defensive line
     const gp = teams[0].players.slice(1).map((p) => p.x).sort((a, b) => a - b);
     const lineX = (gp[0] + gp[1] + gp[2] + gp[3]) / 4;
-    g.strokeStyle = "rgba(34,211,238,.6)"; g.lineWidth = 1.4 * dpr;
+    g.strokeStyle = "rgba(255,201,60,.8)"; g.lineWidth = 1.4 * dpr;
     g.setLineDash([2 * dpr, 4 * dpr]);
     g.beginPath(); g.moveTo(X(lineX), Y(1)); g.lineTo(X(lineX), Y(Wd - 1)); g.stroke(); g.setLineDash([]);
 
@@ -405,7 +405,7 @@
     const r = Math.max(3.2, 0.95 * sx);
     all.forEach((p) => {
       const tm = teams[p.team];
-      const col = p.i === 0 ? "#fbbf24" : tm.color;
+      const col = p.i === 0 ? "#B9C4BF" : tm.color;
       const x = X(p.x), y = Y(p.y);
       g.beginPath(); g.arc(x, y, r, 0, 7);
       g.fillStyle = col; g.shadowColor = col; g.shadowBlur = 12 * dpr; g.fill(); g.shadowBlur = 0;
@@ -433,12 +433,12 @@
     }
     // ball
     g.beginPath(); g.arc(X(ball.x), Y(ball.y), r * 0.62, 0, 7);
-    g.fillStyle = "#fff"; g.shadowColor = "#fff"; g.shadowBlur = 14 * dpr; g.fill(); g.shadowBlur = 0;
+    g.fillStyle = "#FFC93C"; g.shadowColor = "#FFC93C"; g.shadowBlur = 14 * dpr; g.fill(); g.shadowBlur = 0;
 
     // radar sweep
     const sweep = ((now / 4000) % 1) * (W + 200) - 100;
     const grd = g.createLinearGradient(sweep - 80, 0, sweep, 0);
-    grd.addColorStop(0, "rgba(34,211,238,0)"); grd.addColorStop(1, "rgba(34,211,238,.07)");
+    grd.addColorStop(0, "rgba(255,240,205,0)"); grd.addColorStop(1, "rgba(255,240,205,.05)");
     g.fillStyle = grd; g.fillRect(sweep - 80, 0, 80, H);
   }
 
