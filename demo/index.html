@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="fr" dir="ltr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>Statistiques de match</title>
+<meta name="description" content="">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%233d5bd9'/%3E%3Crect x='7' y='9' width='18' height='14' rx='1.5' fill='none' stroke='%23fff' stroke-width='2'/%3E%3Cpath d='M16 9v14' stroke='%23fff' stroke-width='2'/%3E%3Ccircle cx='16' cy='16' r='3' fill='none' stroke='%23fff' stroke-width='2'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+Arabic:wght@400;500;600;700&display=swap">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="vitrine.css">
+<link rel="stylesheet" href="accueil.css">
+</head>
+<body class="ac">
+<header class="ac-tete">
+  <a class="ac-marque" href="#haut" aria-label="">
+    <svg viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="8"/><rect x="7" y="9" width="18" height="14" rx="1.5" class="l"/><path d="M16 9v14" class="l"/><circle cx="16" cy="16" r="3" class="l"/></svg>
+    <b class="ac-nom"></b>
+  </a>
+  <nav class="ac-nav">
+    <a href="#contenu" data-t="navContenu"></a>
+    <a href="#difference" data-t="navDiff"></a>
+    <a href="#essayer" data-t="navEssayer"></a>
+    <a href="#contact" data-t="navContact" class="ac-si-contact"></a>
+  </nav>
+  <div class="lang ac-lang"><b data-l="fr">FR</b><b data-l="en">EN</b><b data-l="ar">ع</b></div>
+</header>
+
+<main id="haut">
+  <section class="ac-hero">
+    <div class="ac-hero-txt">
+      <p class="ac-sur" data-t="heroSur"></p>
+      <h1 data-t="heroTitre"></h1>
+      <p class="ac-lead" data-t="heroLead"></p>
+      <div class="ac-cta">
+        <a class="vt-btn vt-gros" data-lien="app.html" data-t="voirDemo"></a>
+        <button class="vt-btn vt-gros vt-sec" data-vt="ouvrir" data-t="tester"></button>
+      </div>
+      <p class="ac-petit" data-t="heroNote"></p>
+    </div>
+    <figure class="ac-ecran ac-ecran-hero">
+      <div class="ac-barre"><i></i><i></i><i></i></div>
+      <img data-img="match" alt="" width="1440" height="1000">
+    </figure>
+  </section>
+
+  <section class="ac-sec" id="contenu">
+    <h2 data-t="contenuTitre"></h2>
+    <p class="ac-sec-lg" data-t="contenuLg"></p>
+    <div class="ac-cartes">
+      <article><span class="ac-num">1</span><h3 data-t="c1T"></h3><p data-t="c1"></p></article>
+      <article><span class="ac-num">2</span><h3 data-t="c2T"></h3><p data-t="c2"></p></article>
+      <article><span class="ac-num">3</span><h3 data-t="c3T"></h3><p data-t="c3"></p></article>
+      <article><span class="ac-num">4</span><h3 data-t="c4T"></h3><p data-t="c4"></p></article>
+      <article><span class="ac-num">5</span><h3 data-t="c5T"></h3><p data-t="c5"></p></article>
+      <article><span class="ac-num">6</span><h3 data-t="c6T"></h3><p data-t="c6"></p></article>
+    </div>
+    <div class="ac-galerie">
+      <figure class="ac-ecran"><div class="ac-barre"><i></i><i></i><i></i></div><img data-img="joueur" alt="" width="1440" height="1000" loading="lazy"><figcaption data-t="capJoueur"></figcaption></figure>
+      <figure class="ac-ecran"><div class="ac-barre"><i></i><i></i><i></i></div><img data-img="ligue" alt="" width="1440" height="1000" loading="lazy"><figcaption data-t="capLigue"></figcaption></figure>
+    </div>
+  </section>
+
+  <section class="ac-sec ac-fond" id="difference">
+    <h2 data-t="diffTitre"></h2>
+    <div class="ac-diff">
+      <div><h3 data-t="d1T"></h3><p data-t="d1"></p></div>
+      <div><h3 data-t="d2T"></h3><p data-t="d2"></p></div>
+      <div><h3 data-t="d3T"></h3><p data-t="d3"></p></div>
+      <div><h3 data-t="d4T"></h3><p data-t="d4"></p></div>
+      <div><h3 data-t="d5T"></h3><p data-t="d5"></p></div>
+      <div><h3 data-t="d6T"></h3><p data-t="d6"></p></div>
+    </div>
+  </section>
+
+  <section class="ac-sec" id="comment">
+    <h2 data-t="commentTitre"></h2>
+    <ol class="ac-etapes">
+      <li><b data-t="e1T"></b><span data-t="e1"></span></li>
+      <li><b data-t="e2T"></b><span data-t="e2"></span></li>
+      <li><b data-t="e3T"></b><span data-t="e3"></span></li>
+    </ol>
+  </section>
+
+  <section class="ac-sec ac-essai" id="essayer">
+    <div>
+      <h2 data-t="essaiTitre"></h2>
+      <p data-t="essai1"></p>
+      <p class="vt-prive"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M4.5 7V5a3.5 3.5 0 0 1 7 0v2h.5a1 1 0 0 1 1 1v6a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V8a1 1 0 0 1 1-1zm1.5 0h4V5a2 2 0 0 0-4 0z"/></svg><span data-t="essaiPrive"></span></p>
+      <p class="ac-petit" data-t="essaiLimites"></p>
+    </div>
+    <div class="ac-essai-act">
+      <button class="vt-btn vt-gros" data-vt="ouvrir" data-t="tester"></button>
+      <a class="ac-lien" href="exemple/match-exemple.zip" download data-t="exemple"></a>
+    </div>
+  </section>
+
+  <section class="ac-sec ac-si-contact" id="contact">
+    <h2 data-t="contactTitre"></h2>
+    <p data-t="contactTxt"></p>
+    <p><a class="vt-btn vt-gros ac-mail" href="#"></a></p>
+  </section>
+</main>
+
+<footer class="ac-pied">
+  <span class="ac-nom"></span> · <span data-t="pied"></span>
+</footer>
+
+<script src="config.js"></script>
+<script src="vitrine.js"></script>
+<script src="accueil.js"></script>
+</body>
+</html>
